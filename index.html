@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Aula - Servicios de Tecnología de la Información</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Proyecto de Aula</h1>
+                <h2>Servicios de Tecnología de la Información</h2>
+                <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">
+                <span id="progressText"></span>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="overview">
+                <i class="fas fa-house"></i> Inicio
+            </button>
+            <button class="nav-tab" data-tab="topics">
+                <i class="fas fa-list"></i> Temas
+            </button>
+            <button class="nav-tab" data-tab="progress">
+                <i class="fas fa-chart-line"></i> Progreso
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Tab -->
+            <div class="tab-content active" id="overview">
+                <div class="welcome-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Bienvenido al Proyecto de Aula</h3>
+                    <p>Este proyecto de aula funciona como <strong>material complementario</strong> a las clases presenciales, utilizando un sistema de <strong>Cards</strong> que se van completando progresivamente.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Cards de Conceptos</h4>
+                            <p>Resúmenes de temas clave</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-flask"></i>
+                            <h4>Cards de Ejemplos</h4>
+                            <p>Casos prácticos y aplicaciones</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-tasks"></i>
+                            <h4>Cards de Actividades</h4>
+                            <p>Ejercicios de refuerzo</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-link"></i>
+                            <h4>Cards de Recursos</h4>
+                            <p>Enlaces y materiales adicionales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-info">
+                    <h3><i class="fas fa-info-circle"></i> Información del Curso</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Asignatura:</strong> Servicios de Tecnología de la Información
+                        </div>
+                        <div class="info-item">
+                            <strong>Programa:</strong> Ingeniería Informática
+                        </div>
+                        <div class="info-item">
+                            <strong>Modalidad:</strong> Proyecto de aula complementario
+                        </div>
+                        <div class="info-item">
+                            <strong>Duración:</strong> 9 semanas
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topics Tab -->
+            <div class="tab-content" id="topics">
+                <h3><i class="fas fa-list"></i> Temas del Curso</h3>
+                <div class="topics-grid" id="topicsGrid">
+                    <!-- Topics will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <!-- Progress Tab -->
+            <div class="tab-content" id="progress">
+                <h3><i class="fas fa-chart-line"></i> Progreso del Curso</h3>
+                <div class="progress-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-week"></i>
+                        <h4>Semanas Completadas</h4>
+                        <span class="stat-number">2/9</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h4>Cards Completadas</h4>
+                        <span class="stat-number">8/36</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-percentage"></i>
+                        <h4>Progreso Total</h4>
+                        <span class="stat-number">22%</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal removed - topics now open in separate pages -->
+
+    <script src="script.js"></script>
+</body>
+</html>
