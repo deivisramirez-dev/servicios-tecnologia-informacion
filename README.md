@@ -3,9 +3,8 @@
 ## 🎯 Información del Curso
 - **Asignatura**: Servicios de Tecnología de la Información
 - **Programa**: Ingeniería Informática
-- **Docente**: [Tu nombre]
-- **Semestre**: [Semestre actual]
-- **Modalidad**: Proyecto de aula complementario con Cards
+- **Docente**: Deivis Eduard Ramirez Martinez
+
 
 ## 🎨 Propósito del Proyecto de Aula
 Este proyecto de aula funciona como **material complementario** a las clases presenciales, utilizando un sistema de **Cards** que se van completando progresivamente:
