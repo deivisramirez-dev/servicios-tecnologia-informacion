@@ -30,10 +30,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Herramientas de cálculo
 
 ### 🔵 Semana 3: El Gobierno y la Gestión de las TIC
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: Gobierno corporativo, marcos de referencia, normativas ISO
+- [x] **Card Ejemplos**: Casos de certificaciones, marcos aplicados
+- [x] **Card Actividades**: Análisis de marcos, estudio de normativas, diseño de gobierno
+- [x] **Card Recursos**: Videos, artículos, herramientas, normativas
 
 ### 🟣 Semana 4: El Gobierno Corporativo de las TIC
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -78,9 +78,9 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 4. **Semanalmente**: Revisar Cards anteriores
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 2/9
-- **Cards completadas**: 8/36
-- **Progreso**: 22%
+- **Semanas completadas**: 3/9
+- **Cards completadas**: 12/36
+- **Progreso**: 33%
 
 ---
 *Última actualización: [Fecha actual]*

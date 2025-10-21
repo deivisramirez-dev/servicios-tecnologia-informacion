@@ -32,15 +32,15 @@ const courseData = {
         {
             id: 3,
             title: "El Gobierno y la Gestión de las TIC",
-            description: "Por desarrollar según avance del curso",
+            description: "Gobierno corporativo, marcos de referencia, normativas ISO",
             icon: "fas fa-cogs",
             color: "#007bff",
-            status: "pending",
+            status: "completed",
             cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
+                concepts: { completed: true, title: "Conceptos Clave" },
+                examples: { completed: true, title: "Ejemplos Prácticos" },
+                activities: { completed: true, title: "Actividades" },
+                resources: { completed: true, title: "Recursos" }
             }
         },
         {
@@ -302,6 +302,243 @@ const topicContent = {
                         "Calculadora de ROI",
                         "Plantillas de Análisis de Riesgos",
                         "Simulador de Proyectos"
+                    ]
+                }
+            ]
+        }
+    },
+    3: {
+        title: "El Gobierno y la Gestión de las TIC",
+        concepts: {
+            title: "Conceptos Clave",
+            items: [
+                "Gobierno de las TI: Alineamiento estratégico con la organización",
+                "Diferencias entre Gobierno (estratégico) y Gestión (táctico) de las TSI",
+                "Marcos de referencia: Estructuras para procesos y metodologías",
+                "Normativas ISO: ISO 38500, ISO 20000, ISO 27001",
+                "Certificaciones AENOR: UNE 71599 para gobierno corporativo",
+                "Responsabilidad actual y futura en la gestión de TI",
+                "Gobernanza Corporativa: Sistema de reglas y procesos de dirección",
+                "Alineación Estratégica: Sincronización entre TI y estrategia de negocio",
+                "Gestión del Valor de TI: Maximización del valor aportado por las TI",
+                "COBIT 2019: 5 dominios, 40 objetivos de control",
+                "ITIL 4: 34 prácticas de gestión de servicios",
+                "Val IT: Marco para gestionar valor de inversiones en TI"
+            ]
+        },
+        examples: {
+            title: "Ejemplos Prácticos",
+            items: [
+                {
+                    title: "Casos de Gobierno Corporativo",
+                    examples: [
+                        "Bancolombia: Implementación de COBIT para auditoría y control",
+                        "Petrobras: Gobierno de TI en sector energético con ISO 38500",
+                        "Bancos: Implementación de ISO 27001 para seguridad de información",
+                        "Empresas manufactureras: Certificación ISO 20000 para servicios",
+                        "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
+                        "PYMEs: Adopción de marcos de referencia adaptados y escalables"
+                    ]
+                },
+                {
+                    title: "Marcos de Referencia Aplicados",
+                    examples: [
+                        "COBIT 2019: 5 dominios, 40 objetivos de control para auditoría",
+                        "ITIL 4: 34 prácticas para gestión del ciclo de vida de servicios",
+                        "ISO 38500: 6 principios y 3 funciones para gobierno corporativo",
+                        "Val IT: Gestión de portafolio y valor de inversiones en TI",
+                        "Balanced Scorecard: Métricas desde 4 perspectivas (financiera, cliente, procesos, aprendizaje)"
+                    ]
+                },
+                {
+                    title: "Roles y Responsabilidades",
+                    examples: [
+                        "CIO (Chief Information Officer): Estrategia de TI y alineación con negocio",
+                        "CTO (Chief Technology Officer): Arquitectura tecnológica e innovación",
+                        "IT Governance Board: Decisiones estratégicas y aprobación de inversiones",
+                        "IT Service Manager: Gestión operativa de servicios de TI",
+                        "Security Officer: Gestión de riesgos y seguridad de la información"
+                    ]
+                },
+                {
+                    title: "Casos de Éxito en Latinoamérica",
+                    examples: [
+                        "Bancolombia: Transformación digital con gobierno de TI robusto",
+                        "Petrobras: Gestión de riesgos y compliance en sector energético",
+                        "Gobiernos locales: Implementación de marcos de referencia",
+                        "PYMEs: Adopción de mejores prácticas con recursos limitados",
+                        "Universidades: Gobierno de TI en instituciones educativas"
+                    ]
+                }
+            ]
+        },
+        activities: {
+            title: "Actividades de Refuerzo",
+            items: [
+                {
+                    title: "Análisis de Marcos de Referencia (25 min)",
+                    objective: "Comprender la aplicación de marcos en organizaciones",
+                    instructions: [
+                        "Selecciona una organización que conozcas",
+                        "Identifica qué marco de referencia podría aplicar",
+                        "Explica los beneficios de su implementación",
+                        "Propón un plan de adopción básico"
+                    ]
+                },
+                {
+                    title: "Estudio de Normativas ISO (30 min)",
+                    objective: "Analizar la importancia de las certificaciones",
+                    instructions: [
+                        "Investiga las diferencias entre ISO 20000 e ISO 27001",
+                        "Identifica qué tipo de organización necesita cada norma",
+                        "Estima los costos y beneficios de la certificación",
+                        "Propón una estrategia de implementación"
+                    ]
+                },
+                {
+                    title: "Diseño de Gobierno de TI (35 min)",
+                    objective: "Aplicar conceptos de gobierno corporativo",
+                    instructions: [
+                        "Define la estructura de gobierno para una PYME",
+                        "Identifica roles y responsabilidades clave",
+                        "Establece procesos de evaluación y monitoreo",
+                        "Diseña indicadores de desempeño básicos"
+                    ]
+                },
+                {
+                    title: "Análisis de Roles y Responsabilidades (30 min)",
+                    objective: "Comprender la estructura organizacional de TI",
+                    instructions: [
+                        "Identifica los roles clave en una organización de TI",
+                        "Define las responsabilidades del CIO vs CTO",
+                        "Diseña un IT Governance Board para una empresa mediana",
+                        "Establece canales de comunicación entre roles"
+                    ]
+                },
+                {
+                    title: "Diseño de Métricas y KPIs (40 min)",
+                    objective: "Desarrollar indicadores de desempeño de TI",
+                    instructions: [
+                        "Selecciona 5 KPIs clave para evaluar el desempeño de TI",
+                        "Define métricas de valor de negocio (ROI, TCO)",
+                        "Diseña un Balanced Scorecard para TI",
+                        "Establece procesos de medición y reporte"
+                    ]
+                },
+                {
+                    title: "Análisis de Riesgos en TI (35 min)",
+                    objective: "Identificar y gestionar riesgos de TI",
+                    instructions: [
+                        "Identifica 10 riesgos principales en proyectos de TI",
+                        "Clasifica riesgos por probabilidad e impacto",
+                        "Propón estrategias de mitigación para cada riesgo",
+                        "Diseña un plan de contingencia básico"
+                    ]
+                },
+                {
+                    title: "Caso de Estudio: Implementación de COBIT (45 min)",
+                    objective: "Aplicar COBIT en un caso real",
+                    instructions: [
+                        "Selecciona una organización para implementar COBIT",
+                        "Identifica los 5 dominios más relevantes",
+                        "Selecciona 10 objetivos de control prioritarios",
+                        "Diseña un plan de implementación por fases"
+                    ]
+                }
+            ]
+        },
+        resources: {
+            title: "Recursos Adicionales",
+            items: [
+                {
+                    title: "Videos Recomendados",
+                    items: [
+                        "¿Qué es el Gobierno de las TI? - Conceptos fundamentales",
+                        "ISO 38500: Gobierno Corporativo de TI - Implementación práctica",
+                        "COBIT 2019: Guía completa de implementación",
+                        "ITIL 4: Gestión del ciclo de vida de servicios",
+                        "Marcos de Referencia: COBIT vs ITIL vs ISO 38500",
+                        "Certificaciones ISO para Organizaciones: Beneficios y costos",
+                        "Balanced Scorecard para TI: Métricas y KPIs",
+                        "Risk Management en TI: Identificación y mitigación"
+                    ]
+                },
+                {
+                    title: "Artículos de Interés",
+                    items: [
+                        "Gobierno Corporativo en Latinoamérica: Tendencias y casos",
+                        "Beneficios de las Certificaciones ISO: ROI y valor de negocio",
+                        "Alineación Estratégica de las TI: Mejores prácticas",
+                        "Marcos de Referencia: COBIT vs ITIL vs Val IT",
+                        "Roles y Responsabilidades en Gobierno de TI",
+                        "Métricas y KPIs para evaluar el desempeño de TI",
+                        "Tendencias Globales en Gobierno de TI 2024",
+                        "Casos de Éxito y Fracaso en Implementación de Marcos"
+                    ]
+                },
+                {
+                    title: "Herramientas Online",
+                    items: [
+                        "Calculadora de ROI para Certificaciones ISO",
+                        "Plantillas de Gobierno de TI (COBIT, ITIL, ISO)",
+                        "Simulador de Marcos de Referencia",
+                        "Guías de Implementación ISO 38500, 20000, 27001",
+                        "Generador de Balanced Scorecard para TI",
+                        "Matriz de Riesgos para Proyectos de TI",
+                        "Templates de IT Governance Board",
+                        "Calculadora de TCO (Total Cost of Ownership)"
+                    ]
+                },
+                {
+                    title: "Normativas y Estándares",
+                    items: [
+                        "ISO 38500: Gobierno Corporativo de TI",
+                        "ISO 20000: Gestión de Servicios de TI",
+                        "ISO 27001: Seguridad de la Información",
+                        "ISO 12207: Procesos del ciclo de vida del software",
+                        "UNE 71599: Gobierno de TIC (AENOR)",
+                        "COBIT 2019: Control Objectives for Information Technology",
+                        "ITIL 4: Information Technology Infrastructure Library",
+                        "Val IT: Value of IT Investments"
+                    ]
+                },
+                {
+                    title: "Certificaciones Profesionales",
+                    items: [
+                        "CISA: Certified Information Systems Auditor",
+                        "CISM: Certified Information Security Manager",
+                        "CGEIT: Certified in the Governance of Enterprise IT",
+                        "ITIL Foundation: Gestión de Servicios de TI",
+                        "ISO 27001 Lead Auditor: Auditoría de Seguridad",
+                        "COBIT Foundation: Gobierno de TI",
+                        "CISSP: Certified Information Systems Security Professional",
+                        "PMP: Project Management Professional"
+                    ]
+                },
+                {
+                    title: "Libros Recomendados",
+                    items: [
+                        "IT Governance: How Top Performers Manage IT Decision Rights - Weill & Ross",
+                        "The IT Value Network: From IT Investment to Stakeholder Value - Murphy",
+                        "COBIT 5 Implementation Guide - ISACA",
+                        "ITIL 4 Essentials: Your Essential Guide for the ITIL 4 Foundation Exam",
+                        "Balanced Scorecard for IT: Creating Value Through IT Governance",
+                        "Risk Management in IT: A Practical Guide",
+                        "Digital Transformation: A Framework for IT Governance",
+                        "IT Strategy: Best Practices for IT Governance"
+                    ]
+                },
+                {
+                    title: "Organizaciones y Estándares",
+                    items: [
+                        "ISACA: Information Systems Audit and Control Association",
+                        "ITIL: Information Technology Infrastructure Library",
+                        "ISO: International Organization for Standardization",
+                        "AENOR: Asociación Española de Normalización",
+                        "NIST: National Institute of Standards and Technology",
+                        "COBIT: Control Objectives for Information and Related Technology",
+                        "Val IT: Value of IT Investments Framework",
+                        "TOGAF: The Open Group Architecture Framework"
                     ]
                 }
             ]

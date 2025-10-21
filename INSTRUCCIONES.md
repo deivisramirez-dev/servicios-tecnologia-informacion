@@ -76,7 +76,13 @@ servicios-tecnologia-informacion/
 - **Actividades**: Análisis de situación actual, identificación de riesgos
 - **Recursos**: Videos, herramientas de cálculo
 
-### Temas 3-9: Pendientes
+### Tema 3: El Gobierno y la Gestión de las TIC ✅
+- **Conceptos**: Gobierno corporativo, marcos de referencia, normativas ISO
+- **Ejemplos**: Casos de certificaciones, marcos aplicados
+- **Actividades**: Análisis de marcos, estudio de normativas, diseño de gobierno
+- **Recursos**: Videos, artículos, herramientas, normativas
+
+### Temas 4-9: Pendientes
 - Estructura lista para completar
 - Se irán agregando según avance del curso
 
