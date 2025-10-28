@@ -7,12 +7,11 @@
 
 
 ## 🎨 Propósito del Proyecto de Aula
-Este proyecto de aula funciona como **material complementario** a las clases presenciales, utilizando un sistema de **Cards** que se van completando progresivamente:
+Este proyecto de aula funciona como **material complementario** a las clases presenciales, organizado en **3 secciones principales** que facilitan el aprendizaje y la evaluación:
 
-- 📝 **Cards de Conceptos**: Resúmenes de temas clave
-- 💡 **Cards de Ejemplos**: Casos prácticos y aplicaciones
-- 🎯 **Cards de Actividades**: Ejercicios de refuerzo
-- 🔗 **Cards de Recursos**: Enlaces y materiales adicionales
+- 💡 **Conceptos Clave**: Los conceptos más relevantes de cada tema del curso
+- 🔬 **Casos de Estudio**: Casos de estudio detallados con descripción y desarrollo
+- 📝 **Autoevaluación**: Tests de preguntas para evaluar el conocimiento
 - 📋 **Cards de Notas**: Espacio personal para apuntes
 
 ## 📅 Estructura Semanal con Cards
@@ -36,10 +35,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Videos, artículos, herramientas, normativas
 
 ### 🟣 Semana 4: El Gobierno Corporativo de las TIC
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: Norma ISO 38500, principios de gobierno, implementación
+- [x] **Card Ejemplos**: Casos de implementación, aplicación de principios
+- [x] **Card Actividades**: Análisis de principios, diseño de estructura, casos de estudio
+- [x] **Card Recursos**: Videos, artículos, herramientas, normativas, bibliografía
 
 ### 🟠 Semana 5: COBIT
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -72,15 +71,15 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [ ] **Card Recursos**: [Por incluir]
 
 ## 🎯 Cómo Usar el Proyecto de Aula
-1. **Antes de la clase**: Revisar Cards de Conceptos
-2. **Durante la clase**: Completar Cards de Notas
-3. **Después de la clase**: Realizar Cards de Actividades
-4. **Semanalmente**: Revisar Cards anteriores
+1. **Antes de la clase**: Revisar Conceptos Clave
+2. **Durante la clase**: Estudiar Casos de Estudio
+3. **Después de la clase**: Realizar Autoevaluación
+4. **Semanalmente**: Revisar contenido anterior
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 3/9
-- **Cards completadas**: 12/36
-- **Progreso**: 33%
+- **Semanas completadas**: 4/9
+- **Secciones disponibles**: 3/3
+- **Progreso**: 44%
 
 ---
 *Última actualización: [Fecha actual]*

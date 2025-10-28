@@ -47,28 +47,58 @@
             <div class="tab-content active" id="overview">
                 <div class="welcome-section">
                     <h3><i class="fas fa-graduation-cap"></i> Bienvenido al Proyecto de Aula</h3>
-                    <p>Este proyecto de aula funciona como <strong>material complementario</strong> a las clases presenciales, utilizando un sistema de <strong>Cards</strong> que se van completando progresivamente.</p>
+                    <p>Este proyecto de aula funciona como <strong>material complementario</strong> a las clases presenciales, organizado en <strong>3 secciones principales</strong> que facilitan el aprendizaje y la evaluación.</p>
                     
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <i class="fas fa-lightbulb"></i>
-                            <h4>Cards de Conceptos</h4>
-                            <p>Resúmenes de temas clave</p>
+                    <div class="main-cards-grid">
+                        <div class="main-card" onclick="openSection('conceptosClave')">
+                            <div class="main-card-icon" style="background-color: #28a745;">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="main-card-content">
+                                <h4>Conceptos Clave</h4>
+                                <p>Los conceptos más relevantes de cada tema del curso</p>
+                                <div class="main-card-stats">
+                                    <span><i class="fas fa-book"></i> 4 Temas</span>
+                                    <span><i class="fas fa-check-circle"></i> Completado</span>
+                                </div>
+                            </div>
+                            <div class="main-card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
-                        <div class="feature-card">
-                            <i class="fas fa-flask"></i>
-                            <h4>Cards de Ejemplos</h4>
-                            <p>Casos prácticos y aplicaciones</p>
+                        
+                        <div class="main-card" onclick="openSection('casosEstudio')">
+                            <div class="main-card-icon" style="background-color: #ffc107;">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="main-card-content">
+                                <h4>Casos de Estudio</h4>
+                                <p>Casos de estudio detallados con descripción y desarrollo</p>
+                                <div class="main-card-stats">
+                                    <span><i class="fas fa-file-alt"></i> 6 Casos</span>
+                                    <span><i class="fas fa-check-circle"></i> Disponible</span>
+                                </div>
+                            </div>
+                            <div class="main-card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
-                        <div class="feature-card">
-                            <i class="fas fa-tasks"></i>
-                            <h4>Cards de Actividades</h4>
-                            <p>Ejercicios de refuerzo</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-link"></i>
-                            <h4>Cards de Recursos</h4>
-                            <p>Enlaces y materiales adicionales</p>
+                        
+                        <div class="main-card" onclick="openSection('autoevaluacion')">
+                            <div class="main-card-icon" style="background-color: #007bff;">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="main-card-content">
+                                <h4>Autoevaluación</h4>
+                                <p>Tests de preguntas para evaluar el conocimiento</p>
+                                <div class="main-card-stats">
+                                    <span><i class="fas fa-question-circle"></i> 20 Preguntas</span>
+                                    <span><i class="fas fa-play"></i> Interactivo</span>
+                                </div>
+                            </div>
+                            <div class="main-card-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,24 +137,37 @@
                     <div class="stat-card">
                         <i class="fas fa-calendar-week"></i>
                         <h4>Semanas Completadas</h4>
-                        <span class="stat-number">3/9</span>
+                        <span class="stat-number">4/9</span>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-clipboard-list"></i>
-                        <h4>Cards Completadas</h4>
-                        <span class="stat-number">12/36</span>
+                        <h4>Secciones Disponibles</h4>
+                        <span class="stat-number">3/3</span>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-percentage"></i>
                         <h4>Progreso Total</h4>
-                        <span class="stat-number">33%</span>
+                        <span class="stat-number">44%</span>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 
-    <!-- Modal removed - topics now open in separate pages -->
+    <!-- Modal para secciones principales -->
+    <div id="sectionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeSectionModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido se carga dinámicamente -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

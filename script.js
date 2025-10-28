@@ -7,13 +7,7 @@ const courseData = {
             description: "Innovación empresarial, gestión de producción, marketing, RRHH",
             icon: "fas fa-digital-tachograph",
             color: "#28a745",
-            status: "completed",
-            cards: {
-                concepts: { completed: true, title: "Conceptos Clave" },
-                examples: { completed: true, title: "Ejemplos Prácticos" },
-                activities: { completed: true, title: "Actividades" },
-                resources: { completed: true, title: "Recursos" }
-            }
+            status: "completed"
         },
         {
             id: 2,
@@ -21,13 +15,7 @@ const courseData = {
             description: "Metodologías de análisis, evaluación económica",
             icon: "fas fa-chart-line",
             color: "#ffc107",
-            status: "completed",
-            cards: {
-                concepts: { completed: true, title: "Conceptos Clave" },
-                examples: { completed: true, title: "Ejemplos Prácticos" },
-                activities: { completed: true, title: "Actividades" },
-                resources: { completed: true, title: "Recursos" }
-            }
+            status: "completed"
         },
         {
             id: 3,
@@ -35,27 +23,15 @@ const courseData = {
             description: "Gobierno corporativo, marcos de referencia, normativas ISO",
             icon: "fas fa-cogs",
             color: "#007bff",
-            status: "completed",
-            cards: {
-                concepts: { completed: true, title: "Conceptos Clave" },
-                examples: { completed: true, title: "Ejemplos Prácticos" },
-                activities: { completed: true, title: "Actividades" },
-                resources: { completed: true, title: "Recursos" }
-            }
+            status: "completed"
         },
         {
             id: 4,
             title: "El Gobierno Corporativo de las TIC",
-            description: "Por desarrollar según avance del curso",
+            description: "Norma ISO 38500, principios de gobierno, implementación y mejores prácticas",
             icon: "fas fa-building",
             color: "#6f42c1",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "completed"
         },
         {
             id: 5,
@@ -63,13 +39,7 @@ const courseData = {
             description: "Objetivos de Control para la Información y Tecnologías Relacionadas",
             icon: "fas fa-shield-alt",
             color: "#fd7e14",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "pending"
         },
         {
             id: 6,
@@ -77,13 +47,7 @@ const courseData = {
             description: "La Biblioteca de Infraestructura de Tecnologías de la Información",
             icon: "fas fa-book",
             color: "#dc3545",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "pending"
         },
         {
             id: 7,
@@ -91,13 +55,7 @@ const courseData = {
             description: "Por desarrollar según avance del curso",
             icon: "fas fa-server",
             color: "#795548",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "pending"
         },
         {
             id: 8,
@@ -105,13 +63,7 @@ const courseData = {
             description: "Por desarrollar según avance del curso",
             icon: "fas fa-laptop-code",
             color: "#343a40",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "pending"
         },
         {
             id: 9,
@@ -119,115 +71,32 @@ const courseData = {
             description: "Por desarrollar según avance del curso",
             icon: "fas fa-sync-alt",
             color: "#6c757d",
-            status: "pending",
-            cards: {
-                concepts: { completed: false, title: "Conceptos Clave" },
-                examples: { completed: false, title: "Ejemplos Prácticos" },
-                activities: { completed: false, title: "Actividades" },
-                resources: { completed: false, title: "Recursos" }
-            }
+            status: "pending"
         }
     ]
 };
 
-// Topic content based on txt files
-const topicContent = {
-    1: {
-        title: "La Transformación Digital",
-        concepts: {
+// Nueva estructura de contenido del proyecto
+const projectContent = {
+    conceptosClave: {
             title: "Conceptos Clave",
+        description: "Los conceptos más relevantes de cada tema del curso",
+        icon: "fas fa-lightbulb",
+        color: "#28a745",
             items: [
+            {
+                tema: "Tema 1: La Transformación Digital",
+                conceptos: [
                 "I+D+i: Investigación, Desarrollo e innovación",
-                "Clasificación de tecnologías: Básicas, Emergentes, Clave",
                 "SCM: Supply Chain Management (Gestión de cadena de suministro)",
                 "CRM: Customer Relationship Management (Gestión de relaciones con clientes)",
                 "ERP: Enterprise Resource Planning (Planificación de recursos empresariales)",
                 "Logística inversa: Gestión de productos de desecho y devoluciones"
             ]
         },
-        examples: {
-            title: "Ejemplos Prácticos",
-            items: [
-                {
-                    title: "Casos Globales",
-                    examples: [
-                        "Amazon: De librería online a ecosistema global",
-                        "Netflix: De alquiler de DVDs a streaming global",
-                        "Tesla: Automóviles eléctricos y autónomos",
-                        "Spotify: Música digital y personalizada"
-                    ]
-                },
-                {
-                    title: "Casos Colombianos",
-                    examples: [
-                        "Rappi: Entrega de comida y productos",
-                        "MercadoLibre: E-commerce en Latinoamérica",
-                        "Bancolombia: Banca digital",
-                        "Éxito: Retail digital"
-                    ]
-                }
-            ]
-        },
-        activities: {
-            title: "Actividades de Refuerzo",
-            items: [
-                {
-                    title: "Identificación de Oportunidades (15 min)",
-                    objective: "Identificar oportunidades de transformación digital",
-                    instructions: [
-                        "Piensa en una empresa local que conozcas",
-                        "Identifica 2 procesos que podrían mejorarse con tecnología",
-                        "Propón una solución tecnológica específica",
-                        "Explica los beneficios esperados"
-                    ]
-                },
-                {
-                    title: "Análisis de Cadena de Suministro (20 min)",
-                    objective: "Comprender la complejidad de la gestión de producción",
-                    instructions: [
-                        "Elige un producto que uses frecuentemente",
-                        "Identifica todos los actores en su cadena de suministro",
-                        "Describe los procesos de cada actor",
-                        "Identifica posibles mejoras con tecnología"
-                    ]
-                }
-            ]
-        },
-        resources: {
-            title: "Recursos Adicionales",
-            items: [
-                {
-                    title: "Videos Recomendados",
-                    items: [
-                        "¿Qué es la Transformación Digital?",
-                        "Casos de Éxito en Transformación Digital",
-                        "ERP vs CRM: Diferencias"
-                    ]
-                },
-                {
-                    title: "Artículos de Interés",
-                    items: [
-                        "La Transformación Digital en Colombia",
-                        "Casos de Éxito en Latinoamérica",
-                        "Tendencias en Tecnología Empresarial"
-                    ]
-                },
-                {
-                    title: "Herramientas Online",
-                    items: [
-                        "Simulador de ERP",
-                        "Calculadora de ROI",
-                        "Plantillas de Análisis"
-                    ]
-                }
-            ]
-        }
-    },
-    2: {
-        title: "Caso de Estudio",
-        concepts: {
-            title: "Conceptos Clave",
-            items: [
+            {
+                tema: "Tema 2: Caso de Estudio",
+                conceptos: [
                 "EVS: Estudio de Viabilidad de Sistemas",
                 "ROI: Return on Investment (Retorno de inversión)",
                 "VAN: Valor Actual Neto",
@@ -236,315 +105,341 @@ const topicContent = {
                 "Análisis de Riesgos: Probabilidad, Impacto, Mitigación"
             ]
         },
-        examples: {
-            title: "Ejemplos Prácticos",
-            items: [
-                {
-                    title: "Caso Principal: Botanas del Valle",
-                    examples: [
-                        "Sector: Alimentario",
-                        "Productos: Botanas a base de maíz y frijol",
-                        "Tamaño: PYME",
-                        "Problemas: Recolección, producción, distribución, cobros",
-                        "Objetivos: Buscar ventajas competitivas, Incrementar rentabilidad económica"
-                    ]
-                },
-                {
-                    title: "Otros Casos de Análisis",
-                    examples: [
-                        "Implantación de ERP en PYME: Empresa manufacturera",
-                        "Migración a la nube: Empresa de servicios",
-                        "Implementación de CRM: Empresa de ventas",
-                        "Sistema de gestión documental: Oficina de abogados"
+            {
+                tema: "Tema 3: El Gobierno y la Gestión de las TIC",
+                conceptos: [
+                    "Gobierno de las TI: Alineamiento estratégico con la organización",
+                    "Diferencias entre Gobierno (estratégico) y Gestión (táctico) de las TSI",
+                    "Marcos de referencia: COBIT 2019, ITIL 4, Val IT",
+                    "Normativas ISO: ISO 38500, ISO 20000, ISO 27001",
+                    "Certificaciones AENOR: UNE 71599 para gobierno corporativo"
+                ]
+            },
+            {
+                tema: "Tema 4: El Gobierno Corporativo de las TIC",
+                conceptos: [
+                    "ISO/IEC 38500:2008: Norma internacional para el buen gobierno corporativo",
+                    "Los 6 Principios: Responsabilidad, Estrategia, Adquisición, Rendimiento, Conformidad, Factor Humano",
+                    "Funciones de Gobierno: Evaluación, Dirección, Monitorización",
+                    "Beneficios económicos: 20% superior según estudios del MIT (Peter Weill)",
+                    "Distinción entre gobierno y gestión de las TIC"
                     ]
                 }
             ]
         },
-        activities: {
-            title: "Actividades de Refuerzo",
+    casosEstudio: {
+        title: "Casos de Estudio",
+        description: "Casos de estudio detallados de cada tema del curso",
+        icon: "fas fa-flask",
+        color: "#ffc107",
             items: [
                 {
-                    title: "Análisis de Situación Actual (20 min)",
-                    objective: "Aplicar metodología de análisis a un caso real",
-                    instructions: [
-                        "Elige una empresa que conozcas",
-                        "Identifica 3 problemas en su gestión",
-                        "Propón una solución tecnológica",
-                        "Estima costos y beneficios básicos"
-                    ]
-                },
-                {
-                    title: "Identificación de Riesgos (25 min)",
-                    objective: "Desarrollar habilidades de análisis de riesgos",
-                    instructions: [
-                        "Lista 5 riesgos en un proyecto de TI",
-                        "Clasifica cada riesgo por probabilidad e impacto",
-                        "Propón una estrategia de mitigación para cada uno",
-                        "Prioriza los riesgos más críticos"
+                tema: "Tema 1: La Transformación Digital",
+                casos: [
+                    {
+                        titulo: "Amazon: De librería online a ecosistema global",
+                        descripcion: "Amazon comenzó como una librería online en 1994 y se transformó en el ecosistema global más grande del mundo.",
+                        desarrollo: "La transformación incluyó: 1) Expansión de productos más allá de libros, 2) Desarrollo de AWS (Amazon Web Services), 3) Implementación de logística avanzada con centros de distribución, 4) Creación de servicios digitales como Prime Video y Alexa, 5) Adquisición estratégica de empresas como Whole Foods. Esta transformación digital le permitió a Amazon generar ingresos de más de $470 mil millones en 2021.",
+                        lecciones: "La clave del éxito fue la visión a largo plazo, la inversión continua en tecnología y la capacidad de adaptarse a las necesidades cambiantes del mercado."
+                    },
+                    {
+                        titulo: "Netflix: De alquiler de DVDs a streaming global",
+                        descripcion: "Netflix revolucionó la industria del entretenimiento transformándose de un servicio de alquiler de DVDs a la plataforma de streaming líder mundial.",
+                        desarrollo: "La transformación incluyó: 1) Transición del modelo físico al digital, 2) Desarrollo de algoritmos de recomendación personalizados, 3) Producción de contenido original (Netflix Originals), 4) Expansión global a más de 190 países, 5) Inversión en tecnología de streaming de alta calidad. Netflix pasó de tener 1 millón de suscriptores en 2002 a más de 220 millones en 2022.",
+                        lecciones: "La anticipación de tendencias tecnológicas y la inversión en contenido propio fueron factores clave para el éxito de la transformación."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 2: Caso de Estudio",
+                casos: [
+                    {
+                        titulo: "Botanas del Valle: Implementación de ERP",
+                        descripcion: "PYME del sector alimentario que enfrentaba problemas en recolección, producción, distribución y cobros.",
+                        desarrollo: "Situación inicial: La empresa tenía procesos manuales que generaban ineficiencias. Problemas identificados: 1) Falta de control en la recolección de materias primas, 2) Producción sin planificación adecuada, 3) Distribución desorganizada, 4) Cobros tardíos. Solución implementada: ERP integrado que incluyó módulos de: 1) Gestión de proveedores y compras, 2) Planificación de producción, 3) Control de inventarios, 4) Gestión de ventas y facturación, 5) Reportes gerenciales. Resultados: Incremento del 25% en la eficiencia operativa y reducción del 30% en tiempos de procesamiento.",
+                        lecciones: "La implementación exitosa requirió análisis detallado de procesos, capacitación del personal y gestión del cambio organizacional."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 3: El Gobierno y la Gestión de las TIC",
+                casos: [
+                    {
+                        titulo: "Bancolombia: Implementación de COBIT para auditoría y control",
+                        descripcion: "El banco más grande de Colombia implementó COBIT para mejorar su gobierno de TI y cumplir con regulaciones financieras.",
+                        desarrollo: "Contexto: Bancolombia necesitaba fortalecer su gobierno de TI para cumplir con regulaciones del sector financiero. Implementación: 1) Evaluación del estado actual usando COBIT 2019, 2) Identificación de los 5 dominios más críticos (EDM, APO, BAI, DSS, MEA), 3) Selección de 15 objetivos de control prioritarios, 4) Desarrollo de políticas y procedimientos, 5) Capacitación de equipos técnicos y gerenciales. Resultados: Mejora del 40% en tiempos de auditoría, reducción del 25% en riesgos operacionales, y certificación ISO 27001.",
+                        lecciones: "La implementación de marcos de gobierno requiere compromiso de la alta dirección y recursos dedicados para la capacitación continua."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 4: El Gobierno Corporativo de las TIC",
+                casos: [
+                    {
+                        titulo: "Empresa Manufacturera: Implementación de ISO 38500",
+                        descripcion: "Empresa manufacturera mediana que implementó ISO 38500 para mejorar su gobierno corporativo de TIC.",
+                        desarrollo: "Situación inicial: La empresa tenía inversiones dispersas en TIC sin una estrategia clara. Implementación: 1) Evaluación del estado actual del gobierno de TIC, 2) Aplicación de los 6 principios de ISO 38500: Responsabilidad (matriz RACI), Estrategia (plan estratégico de TIC), Adquisición (proceso de evaluación de proveedores), Rendimiento (dashboard de KPIs), Conformidad (auditorías regulares), Factor Humano (programas de capacitación), 3) Establecimiento de procesos de evaluación, dirección y monitorización. Resultados: Incremento del 20% en ROI de inversiones TIC, reducción del 35% en riesgos tecnológicos, y mejora en la satisfacción de usuarios internos.",
+                        lecciones: "La implementación exitosa requiere alineación con objetivos de negocio y participación activa de todas las áreas de la organización."
+                    }
                     ]
                 }
             ]
         },
-        resources: {
-            title: "Recursos Adicionales",
+    autoevaluacion: {
+        title: "Autoevaluación",
+        description: "Tests de preguntas para evaluar el conocimiento de cada tema",
+        icon: "fas fa-clipboard-check",
+        color: "#007bff",
             items: [
                 {
-                    title: "Videos Recomendados",
-                    items: [
-                        "¿Qué es un Estudio de Viabilidad?",
-                        "Cómo Calcular ROI en Proyectos de TI",
-                        "Gestión de Riesgos en Proyectos"
-                    ]
-                },
-                {
-                    title: "Herramientas Online",
-                    items: [
-                        "Calculadora de ROI",
-                        "Plantillas de Análisis de Riesgos",
-                        "Simulador de Proyectos"
-                    ]
-                }
-            ]
-        }
-    },
-    3: {
-        title: "El Gobierno y la Gestión de las TIC",
-        concepts: {
-            title: "Conceptos Clave",
-            items: [
-                "Gobierno de las TI: Alineamiento estratégico con la organización",
-                "Diferencias entre Gobierno (estratégico) y Gestión (táctico) de las TSI",
-                "Marcos de referencia: Estructuras para procesos y metodologías",
-                "Normativas ISO: ISO 38500, ISO 20000, ISO 27001",
-                "Certificaciones AENOR: UNE 71599 para gobierno corporativo",
-                "Responsabilidad actual y futura en la gestión de TI",
-                "Gobernanza Corporativa: Sistema de reglas y procesos de dirección",
-                "Alineación Estratégica: Sincronización entre TI y estrategia de negocio",
-                "Gestión del Valor de TI: Maximización del valor aportado por las TI",
-                "COBIT 2019: 5 dominios, 40 objetivos de control",
-                "ITIL 4: 34 prácticas de gestión de servicios",
-                "Val IT: Marco para gestionar valor de inversiones en TI"
-            ]
-        },
-        examples: {
-            title: "Ejemplos Prácticos",
-            items: [
-                {
-                    title: "Casos de Gobierno Corporativo",
-                    examples: [
-                        "Bancolombia: Implementación de COBIT para auditoría y control",
-                        "Petrobras: Gobierno de TI en sector energético con ISO 38500",
-                        "Bancos: Implementación de ISO 27001 para seguridad de información",
-                        "Empresas manufactureras: Certificación ISO 20000 para servicios",
-                        "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
-                        "PYMEs: Adopción de marcos de referencia adaptados y escalables"
-                    ]
-                },
-                {
-                    title: "Marcos de Referencia Aplicados",
-                    examples: [
-                        "COBIT 2019: 5 dominios, 40 objetivos de control para auditoría",
-                        "ITIL 4: 34 prácticas para gestión del ciclo de vida de servicios",
-                        "ISO 38500: 6 principios y 3 funciones para gobierno corporativo",
-                        "Val IT: Gestión de portafolio y valor de inversiones en TI",
-                        "Balanced Scorecard: Métricas desde 4 perspectivas (financiera, cliente, procesos, aprendizaje)"
-                    ]
-                },
-                {
-                    title: "Roles y Responsabilidades",
-                    examples: [
-                        "CIO (Chief Information Officer): Estrategia de TI y alineación con negocio",
-                        "CTO (Chief Technology Officer): Arquitectura tecnológica e innovación",
-                        "IT Governance Board: Decisiones estratégicas y aprobación de inversiones",
-                        "IT Service Manager: Gestión operativa de servicios de TI",
-                        "Security Officer: Gestión de riesgos y seguridad de la información"
-                    ]
-                },
-                {
-                    title: "Casos de Éxito en Latinoamérica",
-                    examples: [
-                        "Bancolombia: Transformación digital con gobierno de TI robusto",
-                        "Petrobras: Gestión de riesgos y compliance en sector energético",
-                        "Gobiernos locales: Implementación de marcos de referencia",
-                        "PYMEs: Adopción de mejores prácticas con recursos limitados",
-                        "Universidades: Gobierno de TI en instituciones educativas"
-                    ]
-                }
-            ]
-        },
-        activities: {
-            title: "Actividades de Refuerzo",
-            items: [
-                {
-                    title: "Análisis de Marcos de Referencia (25 min)",
-                    objective: "Comprender la aplicación de marcos en organizaciones",
-                    instructions: [
-                        "Selecciona una organización que conozcas",
-                        "Identifica qué marco de referencia podría aplicar",
-                        "Explica los beneficios de su implementación",
-                        "Propón un plan de adopción básico"
-                    ]
-                },
-                {
-                    title: "Estudio de Normativas ISO (30 min)",
-                    objective: "Analizar la importancia de las certificaciones",
-                    instructions: [
-                        "Investiga las diferencias entre ISO 20000 e ISO 27001",
-                        "Identifica qué tipo de organización necesita cada norma",
-                        "Estima los costos y beneficios de la certificación",
-                        "Propón una estrategia de implementación"
-                    ]
-                },
-                {
-                    title: "Diseño de Gobierno de TI (35 min)",
-                    objective: "Aplicar conceptos de gobierno corporativo",
-                    instructions: [
-                        "Define la estructura de gobierno para una PYME",
-                        "Identifica roles y responsabilidades clave",
-                        "Establece procesos de evaluación y monitoreo",
-                        "Diseña indicadores de desempeño básicos"
-                    ]
-                },
-                {
-                    title: "Análisis de Roles y Responsabilidades (30 min)",
-                    objective: "Comprender la estructura organizacional de TI",
-                    instructions: [
-                        "Identifica los roles clave en una organización de TI",
-                        "Define las responsabilidades del CIO vs CTO",
-                        "Diseña un IT Governance Board para una empresa mediana",
-                        "Establece canales de comunicación entre roles"
-                    ]
-                },
-                {
-                    title: "Diseño de Métricas y KPIs (40 min)",
-                    objective: "Desarrollar indicadores de desempeño de TI",
-                    instructions: [
-                        "Selecciona 5 KPIs clave para evaluar el desempeño de TI",
-                        "Define métricas de valor de negocio (ROI, TCO)",
-                        "Diseña un Balanced Scorecard para TI",
-                        "Establece procesos de medición y reporte"
-                    ]
-                },
-                {
-                    title: "Análisis de Riesgos en TI (35 min)",
-                    objective: "Identificar y gestionar riesgos de TI",
-                    instructions: [
-                        "Identifica 10 riesgos principales en proyectos de TI",
-                        "Clasifica riesgos por probabilidad e impacto",
-                        "Propón estrategias de mitigación para cada riesgo",
-                        "Diseña un plan de contingencia básico"
-                    ]
-                },
-                {
-                    title: "Caso de Estudio: Implementación de COBIT (45 min)",
-                    objective: "Aplicar COBIT en un caso real",
-                    instructions: [
-                        "Selecciona una organización para implementar COBIT",
-                        "Identifica los 5 dominios más relevantes",
-                        "Selecciona 10 objetivos de control prioritarios",
-                        "Diseña un plan de implementación por fases"
-                    ]
-                }
-            ]
-        },
-        resources: {
-            title: "Recursos Adicionales",
-            items: [
-                {
-                    title: "Videos Recomendados",
-                    items: [
-                        "¿Qué es el Gobierno de las TI? - Conceptos fundamentales",
-                        "ISO 38500: Gobierno Corporativo de TI - Implementación práctica",
-                        "COBIT 2019: Guía completa de implementación",
-                        "ITIL 4: Gestión del ciclo de vida de servicios",
-                        "Marcos de Referencia: COBIT vs ITIL vs ISO 38500",
-                        "Certificaciones ISO para Organizaciones: Beneficios y costos",
-                        "Balanced Scorecard para TI: Métricas y KPIs",
-                        "Risk Management en TI: Identificación y mitigación"
-                    ]
-                },
-                {
-                    title: "Artículos de Interés",
-                    items: [
-                        "Gobierno Corporativo en Latinoamérica: Tendencias y casos",
-                        "Beneficios de las Certificaciones ISO: ROI y valor de negocio",
-                        "Alineación Estratégica de las TI: Mejores prácticas",
-                        "Marcos de Referencia: COBIT vs ITIL vs Val IT",
-                        "Roles y Responsabilidades en Gobierno de TI",
-                        "Métricas y KPIs para evaluar el desempeño de TI",
-                        "Tendencias Globales en Gobierno de TI 2024",
-                        "Casos de Éxito y Fracaso en Implementación de Marcos"
-                    ]
-                },
-                {
-                    title: "Herramientas Online",
-                    items: [
-                        "Calculadora de ROI para Certificaciones ISO",
-                        "Plantillas de Gobierno de TI (COBIT, ITIL, ISO)",
-                        "Simulador de Marcos de Referencia",
-                        "Guías de Implementación ISO 38500, 20000, 27001",
-                        "Generador de Balanced Scorecard para TI",
-                        "Matriz de Riesgos para Proyectos de TI",
-                        "Templates de IT Governance Board",
-                        "Calculadora de TCO (Total Cost of Ownership)"
-                    ]
-                },
-                {
-                    title: "Normativas y Estándares",
-                    items: [
-                        "ISO 38500: Gobierno Corporativo de TI",
-                        "ISO 20000: Gestión de Servicios de TI",
-                        "ISO 27001: Seguridad de la Información",
-                        "ISO 12207: Procesos del ciclo de vida del software",
-                        "UNE 71599: Gobierno de TIC (AENOR)",
-                        "COBIT 2019: Control Objectives for Information Technology",
-                        "ITIL 4: Information Technology Infrastructure Library",
-                        "Val IT: Value of IT Investments"
-                    ]
-                },
-                {
-                    title: "Certificaciones Profesionales",
-                    items: [
-                        "CISA: Certified Information Systems Auditor",
-                        "CISM: Certified Information Security Manager",
-                        "CGEIT: Certified in the Governance of Enterprise IT",
-                        "ITIL Foundation: Gestión de Servicios de TI",
-                        "ISO 27001 Lead Auditor: Auditoría de Seguridad",
-                        "COBIT Foundation: Gobierno de TI",
-                        "CISSP: Certified Information Systems Security Professional",
-                        "PMP: Project Management Professional"
-                    ]
-                },
-                {
-                    title: "Libros Recomendados",
-                    items: [
-                        "IT Governance: How Top Performers Manage IT Decision Rights - Weill & Ross",
-                        "The IT Value Network: From IT Investment to Stakeholder Value - Murphy",
-                        "COBIT 5 Implementation Guide - ISACA",
-                        "ITIL 4 Essentials: Your Essential Guide for the ITIL 4 Foundation Exam",
-                        "Balanced Scorecard for IT: Creating Value Through IT Governance",
-                        "Risk Management in IT: A Practical Guide",
-                        "Digital Transformation: A Framework for IT Governance",
-                        "IT Strategy: Best Practices for IT Governance"
-                    ]
-                },
-                {
-                    title: "Organizaciones y Estándares",
-                    items: [
-                        "ISACA: Information Systems Audit and Control Association",
-                        "ITIL: Information Technology Infrastructure Library",
-                        "ISO: International Organization for Standardization",
-                        "AENOR: Asociación Española de Normalización",
-                        "NIST: National Institute of Standards and Technology",
-                        "COBIT: Control Objectives for Information and Related Technology",
-                        "Val IT: Value of IT Investments Framework",
-                        "TOGAF: The Open Group Architecture Framework"
-                    ]
-                }
-            ]
-        }
+                tema: "Tema 1: La Transformación Digital",
+                preguntas: [
+                    {
+                        pregunta: "¿Qué significa I+D+i?",
+                        opciones: [
+                            "Investigación, Desarrollo e innovación",
+                            "Información, Datos e inteligencia",
+                            "Integración, Desarrollo e innovación",
+                            "Investigación, Datos e innovación"
+                        ],
+                        respuesta: 0,
+                        explicacion: "I+D+i se refiere a Investigación, Desarrollo e innovación, representando el proceso completo de generación de conocimiento y su aplicación práctica."
+                    },
+                    {
+                        pregunta: "¿Cuál es la diferencia principal entre ERP y CRM?",
+                        opciones: [
+                            "ERP gestiona recursos internos, CRM gestiona relaciones con clientes",
+                            "ERP es para grandes empresas, CRM para pequeñas",
+                            "ERP es más caro que CRM",
+                            "No hay diferencia, son lo mismo"
+                        ],
+                        respuesta: 0,
+                        explicacion: "ERP (Enterprise Resource Planning) gestiona todos los recursos internos de la empresa, mientras que CRM (Customer Relationship Management) se enfoca específicamente en las relaciones con clientes."
+                    },
+                    {
+                        pregunta: "¿Qué es la logística inversa?",
+                        opciones: [
+                            "Gestión del flujo de productos desde el punto de consumo hasta el origen",
+                            "Logística que funciona en sentido contrario",
+                            "Sistema de devoluciones únicamente",
+                            "Gestión de inventarios al revés"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La logística inversa es el proceso de gestión del flujo de productos desde el punto de consumo hasta el punto de origen para recuperar valor o disponer adecuadamente."
+                    },
+                    {
+                        pregunta: "¿Cuál es el objetivo principal de la transformación digital?",
+                        opciones: [
+                            "Mejorar la eficiencia operativa y crear nuevas oportunidades de negocio",
+                            "Reducir costos únicamente",
+                            "Implementar tecnología por moda",
+                            "Reemplazar completamente a los empleados"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La transformación digital busca mejorar la eficiencia operativa, optimizar procesos y crear nuevas oportunidades de negocio mediante el uso estratégico de la tecnología."
+                    },
+                    {
+                        pregunta: "¿Qué caracteriza a las tecnologías emergentes?",
+                        opciones: [
+                            "Son nuevas tecnologías con potencial de impacto significativo",
+                            "Son tecnologías obsoletas",
+                            "Son tecnologías muy costosas",
+                            "Son tecnologías solo para grandes empresas"
+                        ],
+                        respuesta: 0,
+                        explicacion: "Las tecnologías emergentes son aquellas que están en desarrollo o en las primeras etapas de adopción y tienen el potencial de generar un impacto significativo en la sociedad o la industria."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 2: Caso de Estudio",
+                preguntas: [
+                    {
+                        pregunta: "¿Qué significa EVS?",
+                        opciones: [
+                            "Estudio de Viabilidad de Sistemas",
+                            "Evaluación de Valor de Sistemas",
+                            "Estudio de Ventas de Sistemas",
+                            "Evaluación de Versión de Sistemas"
+                        ],
+                        respuesta: 0,
+                        explicacion: "EVS significa Estudio de Viabilidad de Sistemas, una metodología estructurada para evaluar la factibilidad técnica, económica y operativa de proyectos de sistemas de información."
+                    },
+                    {
+                        pregunta: "¿Cuál es la fórmula del ROI?",
+                        opciones: [
+                            "ROI = (Beneficio Neto / Costo de Inversión) × 100",
+                            "ROI = Costo de Inversión / Beneficio Neto",
+                            "ROI = Beneficio Neto × Costo de Inversión",
+                            "ROI = Beneficio Neto - Costo de Inversión"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La fórmula correcta del ROI es: ROI = (Beneficio Neto / Costo de Inversión) × 100, donde el Beneficio Neto son los ingresos generados menos los costos operativos."
+                    },
+                    {
+                        pregunta: "¿Qué significa TIR?",
+                        opciones: [
+                            "Tasa Interna de Retorno",
+                            "Tiempo Interno de Retorno",
+                            "Tasa de Inversión de Retorno",
+                            "Tiempo de Inversión de Retorno"
+                        ],
+                        respuesta: 0,
+                        explicacion: "TIR significa Tasa Interna de Retorno, que es la tasa de descuento que hace que el VAN de un proyecto sea igual a cero, representando la rentabilidad esperada de la inversión."
+                    },
+                    {
+                        pregunta: "¿Cuál es el objetivo principal del EVS?",
+                        opciones: [
+                            "Evaluar la viabilidad técnica, económica y operativa de un proyecto",
+                            "Calcular únicamente el costo del proyecto",
+                            "Seleccionar el mejor proveedor",
+                            "Implementar el sistema directamente"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El Estudio de Viabilidad de Sistemas (EVS) tiene como objetivo principal evaluar la factibilidad técnica, económica y operativa de un proyecto antes de su implementación."
+                    },
+                    {
+                        pregunta: "¿Qué incluye el análisis de riesgos en un proyecto?",
+                        opciones: [
+                            "Identificación, evaluación y planificación de mitigación de riesgos",
+                            "Solo la identificación de riesgos",
+                            "Únicamente el cálculo de probabilidades",
+                            "Solo la evaluación del impacto"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El análisis de riesgos incluye la identificación de riesgos potenciales, la evaluación de su probabilidad e impacto, y la planificación de estrategias de mitigación."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 3: El Gobierno y la Gestión de las TIC",
+                preguntas: [
+                    {
+                        pregunta: "¿Cuál es la diferencia principal entre Gobierno y Gestión de las TIC?",
+                        opciones: [
+                            "Gobierno es estratégico, Gestión es táctico",
+                            "Gobierno es táctico, Gestión es estratégico",
+                            "No hay diferencia",
+                            "Gobierno es más importante que Gestión"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El Gobierno de las TIC es estratégico (largo plazo, decisiones de alto nivel), mientras que la Gestión es táctico (corto y medio plazo, implementación diaria)."
+                    },
+                    {
+                        pregunta: "¿Cuántos dominios tiene COBIT 2019?",
+                        opciones: [
+                            "5 dominios",
+                            "4 dominios",
+                            "6 dominios",
+                            "3 dominios"
+                        ],
+                        respuesta: 0,
+                        explicacion: "COBIT 2019 tiene 5 dominios principales: EDM (Evaluate, Direct, Monitor), APO (Align, Plan, Organize), BAI (Build, Acquire, Implement), DSS (Deliver, Service, Support), y MEA (Monitor, Evaluate, Assess)."
+                    },
+                    {
+                        pregunta: "¿Cuántas prácticas tiene ITIL 4?",
+                        opciones: [
+                            "34 prácticas",
+                            "26 prácticas",
+                            "40 prácticas",
+                            "30 prácticas"
+                        ],
+                        respuesta: 0,
+                        explicacion: "ITIL 4 tiene 34 prácticas para la gestión del ciclo de vida de servicios de TI, organizadas en 4 dimensiones del modelo de servicio."
+                    },
+                    {
+                        pregunta: "¿Qué es Val IT?",
+                        opciones: [
+                            "Marco para gestionar el valor de las inversiones en TI",
+                            "Sistema de gestión de inventarios",
+                            "Herramienta de desarrollo de software",
+                            "Metodología de testing"
+                        ],
+                        respuesta: 0,
+                        explicacion: "Val IT es un marco de referencia desarrollado por ISACA para ayudar a las organizaciones a gestionar el valor de sus inversiones en tecnología de la información."
+                    },
+                    {
+                        pregunta: "¿Cuál es la diferencia entre Balanced Scorecard y otros marcos de medición?",
+                        opciones: [
+                            "Considera múltiples perspectivas: financiera, cliente, procesos internos y aprendizaje",
+                            "Solo mide indicadores financieros",
+                            "Se enfoca únicamente en procesos internos",
+                            "Mide solo la satisfacción del cliente"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El Balanced Scorecard se diferencia por considerar cuatro perspectivas equilibradas: financiera, del cliente, de procesos internos y de aprendizaje y crecimiento."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 4: El Gobierno Corporativo de las TIC",
+                preguntas: [
+                    {
+                        pregunta: "¿De qué año data la norma ISO/IEC 38500?",
+                        opciones: [
+                            "2008",
+                            "2006",
+                            "2009",
+                            "2007"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La norma ISO/IEC 38500 fue publicada en junio de 2008, basada en una norma australiana precursora."
+                    },
+                    {
+                        pregunta: "¿Cuántos principios tiene la norma ISO 38500?",
+                        opciones: [
+                            "6 principios",
+                            "5 principios",
+                            "7 principios",
+                            "4 principios"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La norma ISO 38500 se basa en 6 principios: Responsabilidad, Estrategia, Adquisición, Rendimiento, Conformidad y Factor Humano."
+                    },
+                    {
+                        pregunta: "Según Peter Weill del MIT, ¿qué beneficio económico reporta una buena gobernanza de las TIC?",
+                        opciones: [
+                            "20% superior",
+                            "25% superior",
+                            "15% superior",
+                            "30% superior"
+                        ],
+                        respuesta: 0,
+                        explicacion: "Peter Weill del MIT asegura que una buena gobernanza de las TIC reporta beneficios económicos directos de un 20% superior a organizaciones con gobernanza poco efectiva."
+                    },
+                    {
+                        pregunta: "¿Cuáles son las tres funciones principales del gobierno de las TIC según ISO 38500?",
+                        opciones: [
+                            "Evaluación, Dirección y Monitorización",
+                            "Planificación, Ejecución y Control",
+                            "Análisis, Diseño e Implementación",
+                            "Estrategia, Táctica y Operación"
+                        ],
+                        respuesta: 0,
+                        explicacion: "Las tres funciones principales del gobierno de las TIC según ISO 38500 son: Evaluación (analizar el uso actual y futuro), Dirección (establecer políticas y estrategias) y Monitorización (supervisar el cumplimiento)."
+                    },
+                    {
+                        pregunta: "¿Qué principio de ISO 38500 se refiere a la alineación de las TIC con los objetivos estratégicos?",
+                        opciones: [
+                            "Principio de Estrategia",
+                            "Principio de Responsabilidad",
+                            "Principio de Rendimiento",
+                            "Principio de Conformidad"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El Principio de Estrategia establece que la estrategia de las TIC debe estar alineada con la estrategia de negocio de la organización para asegurar que las inversiones en TIC contribuyan a los objetivos corporativos."
+                    }
+                ]
+            }
+        ]
     }
 };
+
+// Variables globales para el estado de la aplicación
+let currentSection = 'conceptosClave';
+let currentTest = null;
+let testResults = {};
+let currentQuestion = 0;
 
 // DOM Elements
 let currentTab = 'overview';
@@ -606,9 +501,6 @@ function createTopicCard(topic) {
     card.className = `topic-card ${topic.status}`;
     card.onclick = () => openTopicModal(topic.id);
 
-    const completedCards = Object.values(topic.cards).filter(card => card.completed).length;
-    const totalCards = Object.keys(topic.cards).length;
-
     card.innerHTML = `
         <div class="topic-header">
             <div class="topic-icon" style="background-color: ${topic.color}">
@@ -619,16 +511,7 @@ function createTopicCard(topic) {
             </div>
         </div>
         <div class="topic-description">${topic.description}</div>
-        <div class="topic-cards">
-            ${Object.entries(topic.cards).map(([key, card]) => `
-                <div class="card-type ${card.completed ? 'completed' : 'pending'}">
-                    <i class="fas fa-${getCardIcon(key)}"></i>
-                    ${card.title}
-                </div>
-            `).join('')}
-        </div>
         <div class="topic-status">
-            <span>Cards: ${completedCards}/${totalCards}</span>
             <span class="status-badge ${topic.status}">${getStatusText(topic.status)}</span>
         </div>
     `;
@@ -636,14 +519,262 @@ function createTopicCard(topic) {
     return card;
 }
 
-function getCardIcon(cardType) {
-    const icons = {
-        concepts: 'lightbulb',
-        examples: 'flask',
-        activities: 'tasks',
-        resources: 'link'
-    };
-    return icons[cardType] || 'file';
+// Funciones eliminadas - ahora se manejan a través del modal
+
+function generateSectionHTML(content) {
+    switch (content.title) {
+        case 'Conceptos Clave':
+            return generateConceptosHTML(content);
+        case 'Casos de Estudio':
+            return generateCasosHTML(content);
+        case 'Autoevaluación':
+            return generateAutoevaluacionHTML(content);
+        default:
+            return '<p>Contenido no disponible</p>';
+    }
+}
+
+function generateConceptosHTML(content) {
+    return content.items.map(item => `
+        <div class="concepto-tema">
+            <h3>${item.tema}</h3>
+            <ul class="conceptos-list">
+                ${item.conceptos.map(concepto => `
+                    <li><i class="fas fa-check-circle"></i> ${concepto}</li>
+                `).join('')}
+            </ul>
+        </div>
+    `).join('');
+}
+
+function generateCasosHTML(content) {
+    return content.items.map(item => `
+        <div class="caso-tema">
+            <h3>${item.tema}</h3>
+            <div class="casos-grid">
+                ${item.casos.map(caso => `
+                    <div class="caso-card">
+                        <h4>${caso.titulo}</h4>
+                        <p class="caso-descripcion">${caso.descripcion}</p>
+                        <div class="caso-desarrollo">
+                            <h5>Desarrollo:</h5>
+                            <p>${caso.desarrollo}</p>
+                        </div>
+                        <div class="caso-lecciones">
+                            <h5>Lecciones aprendidas:</h5>
+                            <p>${caso.lecciones}</p>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+function generateAutoevaluacionHTML(content) {
+    return `
+        <div class="autoevaluacion-container">
+            <div class="test-selector">
+                <h3>Selecciona un tema para evaluar:</h3>
+                <div class="test-buttons">
+                    ${content.items.map((item, index) => `
+                        <button class="test-btn" onclick="startTest(${index})">
+                            <i class="fas fa-play"></i>
+                            ${item.tema}
+                        </button>
+                    `).join('')}
+                </div>
+            </div>
+            <div id="test-container" style="display: none;">
+                <div class="test-header">
+                    <h3 id="test-title"></h3>
+                    <div class="test-progress">
+                        <span id="question-counter"></span>
+                        <div class="progress-bar">
+                            <div id="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="question-container"></div>
+                <div id="test-results" style="display: none;"></div>
+            </div>
+        </div>
+    `;
+}
+
+function startTest(temaIndex) {
+    const tema = projectContent.autoevaluacion.items[temaIndex];
+    currentTest = tema;
+    currentQuestion = 0;
+    testResults = { correctas: 0, total: tema.preguntas.length };
+    
+    document.getElementById('test-container').style.display = 'block';
+    document.getElementById('test-title').textContent = tema.tema;
+    
+    showQuestion();
+}
+
+function showQuestion() {
+    const pregunta = currentTest.preguntas[currentQuestion];
+    const container = document.getElementById('question-container');
+    
+    container.innerHTML = `
+        <div class="question-card">
+            <h4>Pregunta ${currentQuestion + 1}</h4>
+            <p class="question-text">${pregunta.pregunta}</p>
+            <div class="options-container">
+                ${pregunta.opciones.map((opcion, index) => `
+                    <button class="option-btn" onclick="selectAnswer(${index})">
+                        ${opcion}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    updateProgress();
+}
+
+function selectAnswer(selectedIndex) {
+    const pregunta = currentTest.preguntas[currentQuestion];
+    const isCorrect = selectedIndex === pregunta.respuesta;
+    
+    if (isCorrect) {
+        testResults.correctas++;
+    }
+    
+    // Mostrar explicación
+    const container = document.getElementById('question-container');
+    container.innerHTML = `
+        <div class="question-card">
+            <h4>Pregunta ${currentQuestion + 1}</h4>
+            <p class="question-text">${pregunta.pregunta}</p>
+            <div class="answer-explanation ${isCorrect ? 'correct' : 'incorrect'}">
+                <h5>${isCorrect ? '✓ Correcto' : '✗ Incorrecto'}</h5>
+                <p><strong>Respuesta correcta:</strong> ${pregunta.opciones[pregunta.respuesta]}</p>
+                <p><strong>Explicación:</strong> ${pregunta.explicacion}</p>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">
+                ${currentQuestion < currentTest.preguntas.length - 1 ? 'Siguiente Pregunta' : 'Ver Resultados'}
+            </button>
+        </div>
+    `;
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    
+    if (currentQuestion < currentTest.preguntas.length) {
+        showQuestion();
+    } else {
+        showResults();
+    }
+}
+
+function showResults() {
+    const percentage = Math.round((testResults.correctas / testResults.total) * 100);
+    const container = document.getElementById('test-results');
+    
+    container.innerHTML = `
+        <div class="results-card">
+            <h3>Resultados del Test</h3>
+            <div class="score-display">
+                <div class="score-circle ${percentage >= 70 ? 'good' : percentage >= 50 ? 'average' : 'poor'}">
+                    <span class="score-percentage">${percentage}%</span>
+                </div>
+                <p class="score-text">${testResults.correctas} de ${testResults.total} preguntas correctas</p>
+            </div>
+            <div class="score-message">
+                ${percentage >= 70 ? 
+                    '<p class="success">¡Excelente! Has demostrado un buen dominio del tema.</p>' :
+                    percentage >= 50 ?
+                    '<p class="warning">Bien, pero puedes mejorar. Te recomendamos repasar el contenido.</p>' :
+                    '<p class="error">Necesitas estudiar más este tema. Revisa los conceptos clave.</p>'
+                }
+            </div>
+            <div class="test-actions">
+                <button class="retry-btn" onclick="retryTest()">
+                    <i class="fas fa-redo"></i> Repetir Test
+                </button>
+                <button class="back-btn" onclick="backToTestSelector()">
+                    <i class="fas fa-arrow-left"></i> Volver a Tests
+                </button>
+            </div>
+        </div>
+    `;
+    
+    container.style.display = 'block';
+    document.getElementById('question-container').style.display = 'none';
+}
+
+// Funciones para manejar los cards principales y el modal
+function openSection(sectionName) {
+    const content = projectContent[sectionName];
+    if (!content) return;
+    
+    // Configurar el modal
+    document.getElementById('modalTitle').textContent = content.title;
+    document.getElementById('modalBody').innerHTML = `
+        <div class="section-header">
+            <i class="${content.icon}"></i>
+            <h2>${content.title}</h2>
+            <p>${content.description}</p>
+        </div>
+        <div class="section-body">
+            ${generateSectionHTML(content)}
+        </div>
+    `;
+    
+    // Mostrar el modal
+    document.getElementById('sectionModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeSectionModal() {
+    document.getElementById('sectionModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Cerrar modal al hacer clic fuera de él
+window.onclick = function(event) {
+    const modal = document.getElementById('sectionModal');
+    if (event.target === modal) {
+        closeSectionModal();
+    }
+}
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeSectionModal();
+    }
+});
+
+// Funciones para manejar los botones del test
+function retryTest() {
+    if (!currentTest) return;
+    
+    // Encontrar el índice del tema actual
+    const temaIndex = projectContent.autoevaluacion.items.findIndex(item => item.tema === currentTest.tema);
+    
+    // Reiniciar el test
+    startTest(temaIndex);
+}
+
+function backToTestSelector() {
+    // Ocultar el contenedor del test
+    document.getElementById('test-container').style.display = 'none';
+    
+    // Mostrar el selector de tests
+    const testSelector = document.querySelector('.test-selector');
+    if (testSelector) {
+        testSelector.style.display = 'block';
+    }
+    
+    // Limpiar variables
+    currentTest = null;
+    currentQuestion = 0;
+    testResults = {};
 }
 
 function getStatusText(status) {
@@ -657,15 +788,18 @@ function getStatusText(status) {
 
 function openTopicModal(topicId) {
     const topic = courseData.topics.find(t => t.id === topicId);
-    const content = topicContent[topicId];
-
-    if (!content) {
-        alert('Contenido no disponible aún. Este tema se desarrollará en futuras clases.');
+    
+    if (!topic) {
+        alert('Tema no encontrado.');
         return;
     }
-
-    // Redirect to topic page instead of opening modal
-    window.location.href = `Tema${topicId}/tema${topicId}.html`;
+    
+    if (topic.status === 'completed') {
+        // Redirigir a la página individual del tema
+        window.location.href = `Tema${topicId}/tema${topicId}.html`;
+    } else {
+        alert('Contenido no disponible aún. Este tema se desarrollará en futuras clases.');
+    }
 }
 
 // Modal functions removed - topics now open in separate pages
@@ -679,14 +813,8 @@ function updateProgress() {
     document.getElementById('progressText').textContent = `Progreso: ${completedTopics}/${totalTopics} semanas (${progressPercentage}%)`;
     
     // Update progress stats
-    const completedCards = courseData.topics.reduce((total, topic) => {
-        return total + Object.values(topic.cards).filter(card => card.completed).length;
-    }, 0);
-    
-    const totalCards = courseData.topics.length * 4; // 4 cards per topic
-    
     document.querySelector('.stat-card:nth-child(1) .stat-number').textContent = `${completedTopics}/${totalTopics}`;
-    document.querySelector('.stat-card:nth-child(2) .stat-number').textContent = `${completedCards}/${totalCards}`;
+    document.querySelector('.stat-card:nth-child(2) .stat-number').textContent = `3/3`;
     document.querySelector('.stat-card:nth-child(3) .stat-number').textContent = `${progressPercentage}%`;
 }
 

@@ -892,3 +892,686 @@ body {
         padding: 1rem;
     }
 }
+
+/* Estilos para los cards principales */
+.main-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.main-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.main-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.main-card-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.main-card-content {
+    flex: 1;
+}
+
+.main-card-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.main-card-content p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.main-card-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-card-stats span {
+    background: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.main-card-stats i {
+    font-size: 0.8rem;
+}
+
+.main-card-arrow {
+    color: #6c757d;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.main-card:hover .main-card-arrow {
+    transform: translateX(4px);
+}
+
+/* Modal para secciones */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 2% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-close {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.modal-body {
+    padding: 2rem;
+    max-height: calc(90vh - 100px);
+    overflow-y: auto;
+}
+
+/* Estilos para las nuevas secciones principales */
+.section-content {
+    padding: 2rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.section-header i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.section-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.section-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Estilos para Conceptos Clave */
+.concepto-tema {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.concepto-tema h3 {
+    color: #28a745;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 0.5rem;
+}
+
+.conceptos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conceptos-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f8f9fa;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.conceptos-list li:last-child {
+    border-bottom: none;
+}
+
+.conceptos-list li i {
+    margin-right: 0.75rem;
+    color: #28a745;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+/* Estilos para Casos de Estudio */
+.caso-tema {
+    margin-bottom: 3rem;
+}
+
+.caso-tema h3 {
+    color: #ffc107;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 0.5rem;
+}
+
+.casos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.caso-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.caso-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.caso-card h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.caso-descripcion {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.caso-desarrollo, .caso-lecciones {
+    margin-bottom: 1rem;
+}
+
+.caso-desarrollo h5, .caso-lecciones h5 {
+    color: #495057;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.caso-desarrollo p, .caso-lecciones p {
+    color: #495057;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilos para Autoevaluación */
+.autoevaluacion-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.test-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.test-selector h3 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.test-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.test-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.test-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+}
+
+.test-btn i {
+    font-size: 1.2rem;
+}
+
+/* Estilos para el test */
+.test-header {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.test-header h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.test-progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.test-progress span {
+    font-weight: 600;
+    color: #495057;
+    min-width: 150px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Estilos para preguntas */
+.question-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.question-card h4 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.question-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.options-container {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.option-btn {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.option-btn:hover {
+    background: #e9ecef;
+    border-color: #007bff;
+}
+
+/* Estilos para explicaciones */
+.answer-explanation {
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.answer-explanation.correct {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.answer-explanation.incorrect {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.answer-explanation h5 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.answer-explanation.correct h5 {
+    color: #155724;
+}
+
+.answer-explanation.incorrect h5 {
+    color: #721c24;
+}
+
+.next-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+    background: #218838;
+}
+
+/* Estilos para resultados */
+.results-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.results-card h3 {
+    color: #007bff;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.score-display {
+    margin-bottom: 2rem;
+}
+
+.score-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.score-circle.good {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.score-circle.average {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+}
+
+.score-circle.poor {
+    background: linear-gradient(135deg, #dc3545, #e83e8c);
+}
+
+.score-text {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0;
+}
+
+.score-message p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.score-message .success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.score-message .warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.score-message .error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.test-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.retry-btn, .back-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.retry-btn {
+    background: #007bff;
+    color: white;
+}
+
+.retry-btn:hover {
+    background: #0056b3;
+}
+
+.back-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #545b62;
+}
+
+/* Responsive para nuevas secciones */
+@media (max-width: 768px) {
+    .main-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .main-card {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .main-card-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .main-card-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .main-card-stats {
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-header {
+        padding: 1rem;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    .section-content {
+        padding: 1rem;
+    }
+    
+    .section-header {
+        padding: 1rem;
+    }
+    
+    .section-header i {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .casos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .test-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .test-progress {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .test-progress span {
+        text-align: center;
+        min-width: auto;
+    }
+    
+    .test-actions {
+        flex-direction: column;
+    }
+    
+    .retry-btn, .back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
