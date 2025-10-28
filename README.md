@@ -82,4 +82,4 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - **Progreso**: 44%
 
 ---
-*Última actualización: [Fecha actual]*
+*Última actualización: [27/10/2025]*
