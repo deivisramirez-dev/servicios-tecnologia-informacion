@@ -41,10 +41,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Videos, artículos, herramientas, normativas, bibliografía
 
 ### 🟠 Semana 5: COBIT
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: Objetivos de control, ISACA, 34 procesos, 4 dominios
+- [x] **Card Ejemplos**: Casos de auditoría y control de seguridad
+- [x] **Card Actividades**: Identificación de dominios, análisis de procesos
+- [x] **Card Recursos**: Videos, artículos, herramientas, bibliografía
 
 ### 🔴 Semana 6: ITIL
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -77,9 +77,9 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 4. **Semanalmente**: Revisar contenido anterior
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 4/9
+- **Semanas completadas**: 5/9
 - **Secciones disponibles**: 3/3
-- **Progreso**: 44%
+- **Progreso**: 56%
 
 ---
-*Última actualización: [27/10/2025]*
+*Última actualización: [4/11/2025]*

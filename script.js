@@ -39,7 +39,7 @@ const courseData = {
             description: "Objetivos de Control para la Información y Tecnologías Relacionadas",
             icon: "fas fa-shield-alt",
             color: "#fd7e14",
-            status: "pending"
+            status: "completed"
         },
         {
             id: 6,
@@ -124,7 +124,18 @@ const projectContent = {
                     "Beneficios económicos: 20% superior según estudios del MIT (Peter Weill)",
                     "Distinción entre gobierno y gestión de las TIC"
                     ]
-                }
+                },
+            {
+                tema: "Tema 5: COBIT",
+                conceptos: [
+                    "COBIT: Control Objectives for Information and Related Technology (Objetivos de Control para la Información y Tecnologías Relacionadas)",
+                    "ISACA: Information Systems Audit and Control Association (Asociación de Auditoría y Control de Sistemas de Información)",
+                    "34 procesos: Cubren todos los aspectos del gobierno y gestión de TI",
+                    "210 objetivos de control: Específicos y detallados",
+                    "4 dominios: Planificación y Organización (PO), Adquisición e Implementación (AI), Entrega y Soporte (ES), Supervisión y Evaluación (SE)",
+                    "COBIT 5: Última edición aceptada internacionalmente (2012), integra Val IT, Risk IT, ITIL e ISO"
+                ]
+            }
             ]
         },
     casosEstudio: {
@@ -180,6 +191,23 @@ const projectContent = {
                         descripcion: "Empresa manufacturera mediana que implementó ISO 38500 para mejorar su gobierno corporativo de TIC.",
                         desarrollo: "Situación inicial: La empresa tenía inversiones dispersas en TIC sin una estrategia clara. Implementación: 1) Evaluación del estado actual del gobierno de TIC, 2) Aplicación de los 6 principios de ISO 38500: Responsabilidad (matriz RACI), Estrategia (plan estratégico de TIC), Adquisición (proceso de evaluación de proveedores), Rendimiento (dashboard de KPIs), Conformidad (auditorías regulares), Factor Humano (programas de capacitación), 3) Establecimiento de procesos de evaluación, dirección y monitorización. Resultados: Incremento del 20% en ROI de inversiones TIC, reducción del 35% en riesgos tecnológicos, y mejora en la satisfacción de usuarios internos.",
                         lecciones: "La implementación exitosa requiere alineación con objetivos de negocio y participación activa de todas las áreas de la organización."
+                    }
+                    ]
+                },
+            {
+                tema: "Tema 5: COBIT",
+                casos: [
+                    {
+                        titulo: "Colegio Privado Bilingüe: Auditoría de Administración de Recursos Humanos con COBIT",
+                        descripcion: "Colegio privado con orientación bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria. Aplicación de COBIT para auditar el proceso de Administración de Recursos Humanos.",
+                        desarrollo: "Contexto: El colegio necesitaba mejorar el control y gestión de su proceso de Administración de Recursos Humanos. Aplicación de COBIT: 1) Selección del proceso PO7 (Administración de Recursos Humanos) del dominio Planificación y Organización, 2) Evaluación de objetivos de control específicos del proceso, 3) Identificación de áreas de mejora en la gestión de personal docente y administrativo, 4) Implementación de controles recomendados por COBIT, 5) Establecimiento de métricas de desempeño. Resultados: Mejora del 30% en la eficiencia de procesos de RRHH, reducción del 20% en tiempos de contratación, mejor cumplimiento de normativas laborales, y mayor satisfacción del personal.",
+                        lecciones: "COBIT proporciona un marco estructurado para auditar y mejorar procesos específicos de TI, incluso en organizaciones educativas. La aplicación sistemática de objetivos de control ayuda a identificar y corregir deficiencias en la gestión."
+                    },
+                    {
+                        titulo: "Empresa Financiera: Implementación de COBIT para Control de Seguridad",
+                        descripcion: "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
+                        desarrollo: "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación: 1) Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas), 2) Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos), 3) Establecimiento de controles de seguridad basados en objetivos de control de COBIT, 4) Capacitación del personal en procesos de seguridad, 5) Auditorías regulares usando el dominio Supervisión y Evaluación. Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras, y certificación ISO 27001.",
+                        lecciones: "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
                     }
                     ]
                 }
@@ -428,6 +456,121 @@ const projectContent = {
                         ],
                         respuesta: 0,
                         explicacion: "El Principio de Estrategia establece que la estrategia de las TIC debe estar alineada con la estrategia de negocio de la organización para asegurar que las inversiones en TIC contribuyan a los objetivos corporativos."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 5: COBIT",
+                preguntas: [
+                    {
+                        pregunta: "¿Qué organización promovió las guías de buenas prácticas COBIT?",
+                        opciones: [
+                            "La norma UNE 35800",
+                            "The ISATA Organization",
+                            "The Control Objectives for Information and related Technology",
+                            "The Information Systems Audit and Control Association"
+                        ],
+                        respuesta: 3,
+                        explicacion: "COBIT fue promovido por ISACA (Information Systems Audit and Control Association) en 1996 como una iniciativa para proporcionar un marco de control de objetivos para la tecnología de la información."
+                    },
+                    {
+                        pregunta: "¿En qué año se publicó la primera edición de COBIT?",
+                        opciones: [
+                            "1996",
+                            "1998",
+                            "1999",
+                            "Ninguna de las anteriores es correcta ya que COBIT no es una norma"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La primera edición de COBIT fue publicada en 1996 como una iniciativa de ISACA. Posteriormente se publicaron ediciones en 1998, 2000, 2005 (4.0), 2007 (4.1) y 2012 (5.0)."
+                    },
+                    {
+                        pregunta: "¿Cuántos procesos tiene COBIT?",
+                        opciones: [
+                            "34 procesos",
+                            "30 procesos",
+                            "40 procesos",
+                            "28 procesos"
+                        ],
+                        respuesta: 0,
+                        explicacion: "COBIT tiene 34 procesos que cubren 210 objetivos de control (específicos o detallados) clasificados en cuatro dominios: Planificación y Organización, Adquisición e Implantación, Entrega y Soporte, y Supervisión y Evaluación."
+                    },
+                    {
+                        pregunta: "¿A qué dominio pertenece la definición del plan estratégico?",
+                        opciones: [
+                            "Adquisición e implementación",
+                            "Entrega y soporte",
+                            "Supervisión y evaluación",
+                            "Planificación y organización"
+                        ],
+                        respuesta: 3,
+                        explicacion: "La definición del plan estratégico (PO1) pertenece al dominio de Planificación y Organización (PO), que desarrolla cómo la tecnología de la información colabora en la consecución de objetivos generales de la organización."
+                    },
+                    {
+                        pregunta: "¿A qué dominio pertenece la identificación de soluciones automatizadas?",
+                        opciones: [
+                            "Adquisición e implementación",
+                            "Entrega y soporte",
+                            "Supervisión y evaluación",
+                            "Planificación y organización"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La identificación de soluciones automatizadas (AI1) pertenece al dominio de Adquisición e Implementación (AI), cuyo objetivo fundamental es la identificación, desarrollo o adquisición e implementación de las soluciones de TI."
+                    },
+                    {
+                        pregunta: "¿A qué dominio pertenece la formación y entrenamiento de usuarios?",
+                        opciones: [
+                            "Adquisición e implementación",
+                            "Entrega y soporte",
+                            "Supervisión y evaluación",
+                            "Planificación y organización"
+                        ],
+                        respuesta: 1,
+                        explicacion: "La formación y entrenamiento de usuarios (ES6) pertenece al dominio de Entrega y Soporte (ES), que analiza los servicios requeridos por la organización y establece los procesos de soporte necesarios."
+                    },
+                    {
+                        pregunta: "¿A qué dominio pertenece la evaluación del control interno?",
+                        opciones: [
+                            "Adquisición e implementación",
+                            "Entrega y soporte",
+                            "Supervisión y evaluación",
+                            "Planificación y organización"
+                        ],
+                        respuesta: 2,
+                        explicacion: "La evaluación del control interno (SE2) pertenece al dominio de Supervisión y Evaluación (SE), que tiene como objetivo evaluar regularmente los procesos de la organización para verificar su calidad, integridad y confidencialidad."
+                    },
+                    {
+                        pregunta: "¿Qué versión de COBIT integra Val IT, Risk IT, ITIL e ISO?",
+                        opciones: [
+                            "COBIT 4.1",
+                            "COBIT 5",
+                            "COBIT 4.0",
+                            "COBIT 3.0"
+                        ],
+                        respuesta: 1,
+                        explicacion: "COBIT 5, publicada en 2012, es la última edición aceptada internacionalmente y se basa en COBIT 4.1, ampliándolo mediante la integración de otros importantes marcos y normas como Val IT, Risk IT, ITIL y las normas ISO relacionadas."
+                    },
+                    {
+                        pregunta: "¿Cuál es la misión de las recomendaciones COBIT?",
+                        opciones: [
+                            "Investigar, desarrollar y promover los objetivos de control de las tecnologías",
+                            "Investigar, relacionar y aplicar los objetivos de control de las tecnologías",
+                            "Promulgar, analizar y validar los objetivos de control de las tecnologías",
+                            "La A y la C son correctas"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La misión de las recomendaciones COBIT es investigar, desarrollar, publicar y promover un conjunto actualizado de objetivos de control de las tecnologías de la información de manera que facilite su uso a gerentes, usuarios y auditores."
+                    },
+                    {
+                        pregunta: "¿Cuál es el matiz diferenciador de COBIT con respecto a otros marcos?",
+                        opciones: [
+                            "Su aplicación estricta en buen gobierno corporativo y control de seguridad",
+                            "Su enfoque exclusivo en gestión de servicios",
+                            "Su aplicación únicamente en grandes empresas",
+                            "Su enfoque exclusivamente técnico"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El matiz diferenciador de COBIT radica en su estricta aplicación en lo relativo al buen gobierno corporativo y control de la seguridad dentro de la gestión de los servicios de TI, siendo útil para gerentes, usuarios y auditores."
                     }
                 ]
             }
