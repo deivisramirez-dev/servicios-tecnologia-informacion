@@ -47,7 +47,7 @@ const courseData = {
             description: "La Biblioteca de Infraestructura de Tecnologías de la Información",
             icon: "fas fa-book",
             color: "#dc3545",
-            status: "pending"
+            status: "completed"
         },
         {
             id: 7,
@@ -135,6 +135,31 @@ const projectContent = {
                     "4 dominios: Planificación y Organización (PO), Adquisición e Implementación (AI), Entrega y Soporte (ES), Supervisión y Evaluación (SE)",
                     "COBIT 5: Última edición aceptada internacionalmente (2012), integra Val IT, Risk IT, ITIL e ISO"
                 ]
+            },
+            {
+                tema: "Tema 6: ITIL",
+                conceptos: [
+                    "ITIL: Information Technology Infrastructure Library (Biblioteca de Infraestructura de Tecnologías de la Información)",
+                    "Iniciativa nacida en 1989: Marco de buenas prácticas para la gestión de servicios de TI",
+                    "Paradigma orientado a servicios: Se centra en la demanda del cliente de TI, no en procesos internos",
+                    "Ciclo de Vida del Servicio: Estrategia, Diseño, Transición, Operación, Mejora",
+                    "Service Desk: Punto único de contacto entre usuarios y TI. Tipos: Local, Centralizado, Virtual, Follow the Sun",
+                    "SLA (Service Level Agreement): Acuerdo formal con el cliente sobre niveles de servicio esperados",
+                    "OLA (Operational Level Agreement): Acuerdo interno entre departamentos de TI",
+                    "UC (Underpinning Contract): Contrato con proveedores externos para cumplir SLA",
+                    "Incident vs Problem vs Change: Incidente (restaurar servicio), Problema (causa raíz), Cambio (modificación planificada)",
+                    "CMDB (Configuration Management Database): Base de datos de elementos de configuración (CIs) y sus relaciones",
+                    "Service Catalog vs Service Portfolio: Catálogo (servicios activos), Portfolio (todos los servicios en todos los estados)",
+                    "CAB (Change Advisory Board): Comité que evalúa y aprueba cambios importantes",
+                    "Tipos de Cambios: Normal, Estándar, Urgente, Emergencia",
+                    "Service Owner: Responsable de un servicio a lo largo de su ciclo de vida",
+                    "Process Owner: Responsable del diseño, implementación y mejora de un proceso",
+                    "RACI Matrix: Herramienta para definir roles (Responsible, Accountable, Consulted, Informed)",
+                    "KPIs y Métricas: Disponibilidad, MTBF, MTTR, cumplimiento de SLA, tiempos de ciclo",
+                    "Continual Improvement Model: Modelo de 7 pasos para mejora continua de servicios",
+                    "Service Value System (ITIL 4): Sistema operativo con Guiding Principles, Governance, Service Value Chain, Practices",
+                    "Beneficios: Mejora de calidad, comunicación con usuarios, flexibilidad, satisfacción del cliente, rendimiento y seguridad"
+                ]
             }
             ]
         },
@@ -208,6 +233,29 @@ const projectContent = {
                         descripcion: "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
                         desarrollo: "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación: 1) Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas), 2) Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos), 3) Establecimiento de controles de seguridad basados en objetivos de control de COBIT, 4) Capacitación del personal en procesos de seguridad, 5) Auditorías regulares usando el dominio Supervisión y Evaluación. Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras, y certificación ISO 27001.",
                         lecciones: "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
+                    }
+                    ]
+                },
+            {
+                tema: "Tema 6: ITIL",
+                casos: [
+                    {
+                        titulo: "Empresa de Servicios Financieros: Implementación de Service Desk con ITIL",
+                        descripcion: "Empresa del sector financiero que implementó ITIL para mejorar la gestión de servicios de TI, enfocándose en la fase de Operación del Servicio.",
+                        desarrollo: "Situación inicial: La empresa tenía problemas en la gestión de incidencias y solicitudes de usuarios, con tiempos de respuesta elevados y falta de visibilidad. Implementación ITIL: 1) Establecimiento de Service Desk como punto único de contacto, 2) Implementación del proceso de Gestión de Incidencias con clasificación y priorización, 3) Implementación de Gestión de Problemas para identificar causas raíz, 4) Establecimiento de SLA (Service Level Agreements) con objetivos medibles, 5) Implementación de Gestión de Configuración (CMDB) para rastrear activos, 6) Capacitación del personal en procesos ITIL. Resultados: Reducción del 45% en tiempo medio de resolución de incidencias, mejora del 60% en satisfacción del usuario, reducción del 30% en incidentes recurrentes mediante gestión de problemas, y cumplimiento del 95% de los SLA establecidos.",
+                        lecciones: "La implementación de ITIL en la fase de Operación del Servicio proporciona estructura y procesos claros que mejoran significativamente la calidad del servicio. El Service Desk funciona como punto central de coordinación y visibilidad."
+                    },
+                    {
+                        titulo: "Organización de Salud: Gestión de Cambios con ITIL",
+                        descripcion: "Hospital que implementó el proceso de Gestión de Cambios de ITIL para controlar y coordinar cambios en sistemas críticos de información médica.",
+                        desarrollo: "Contexto: El hospital necesitaba gestionar cambios en sistemas críticos (historia clínica electrónica, sistemas de laboratorio) sin afectar la operación. Implementación: 1) Establecimiento del proceso de Gestión de Cambios siguiendo ITIL (Transición del Servicio), 2) Creación de Comité de Cambios (CAB) para evaluar cambios importantes, 3) Implementación de clasificación de cambios (Normal, Estándar, Urgente, Emergencia), 4) Proceso de evaluación, aprobación y planificación de cambios, 5) Validación y pruebas antes del despliegue, 6) Gestión de retrocesión en caso de problemas. Resultados: Reducción del 70% en cambios fallidos, cumplimiento del 100% en pruebas de cambios críticos, reducción del 50% en tiempo de implementación de cambios estándar, y cero incidentes relacionados con cambios mal planificados.",
+                        lecciones: "La Gestión de Cambios de ITIL es fundamental en entornos críticos. Proporciona control, visibilidad y reducción de riesgos, especialmente cuando se trata de sistemas que afectan directamente la operación del negocio."
+                    },
+                    {
+                        titulo: "Empresa Manufacturera: Ciclo de Vida Completo del Servicio con ITIL",
+                        descripcion: "Empresa manufacturera que implementó ITIL en todas las fases del ciclo de vida del servicio para gestionar un nuevo sistema ERP.",
+                        desarrollo: "Situación: La empresa necesitaba implementar un nuevo ERP y gestionarlo de manera estructurada. Aplicación del ciclo de vida ITIL: 1) Estrategia: Definición del portfolio de servicios, análisis de demanda y gestión financiera, 2) Diseño: Creación del catálogo de servicios, definición de SLA, diseño de capacidad y disponibilidad, plan de continuidad, 3) Transición: Gestión de cambios, configuración del CMDB, despliegue controlado, validación y pruebas, 4) Operación: Service Desk, gestión de incidencias y problemas, gestión de eventos, 5) Mejora: Proceso de mejora continua con medición de KPIs, generación de informes, plan de mejora del servicio (SIP). Resultados: Implementación exitosa del ERP en tiempo y presupuesto, cumplimiento del 98% de SLA durante los primeros 6 meses, reducción del 40% en costos operativos de TI, mejora continua documentada trimestralmente, y satisfacción del cliente del 92%.",
+                        lecciones: "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
                     }
                     ]
                 }
@@ -571,6 +619,143 @@ const projectContent = {
                         ],
                         respuesta: 0,
                         explicacion: "El matiz diferenciador de COBIT radica en su estricta aplicación en lo relativo al buen gobierno corporativo y control de la seguridad dentro de la gestión de los servicios de TI, siendo útil para gerentes, usuarios y auditores."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 6: ITIL",
+                preguntas: [
+                    {
+                        pregunta: "La orientación a procesos y la orientación a servicios son:",
+                        opciones: [
+                            "Paradigmas radicalmente opuestos",
+                            "Recomendaciones para la programación del software",
+                            "Paradigmas que se complementan",
+                            "Ninguna de las respuestas anteriores es correcta"
+                        ],
+                        respuesta: 2,
+                        explicacion: "La orientación a procesos y la orientación a servicios son paradigmas que se complementan. Mientras que la orientación a procesos se centra en la consecución de objetivos mediante procesos internos concatenados, la orientación a servicios se centra en la demanda del cliente de TI."
+                    },
+                    {
+                        pregunta: "Bajo el esquema de servicios de TI nos centramos en:",
+                        opciones: [
+                            "La correcta aplicación de la norma ISO 38500",
+                            "La consecución del buen gobierno corporativo",
+                            "El análisis de los requisitos del sistema de información",
+                            "La posible demanda del cliente"
+                        ],
+                        respuesta: 3,
+                        explicacion: "Bajo el esquema de servicios de TI nos centramos en la posible demanda del cliente. El paradigma orientado a servicios no se centra en la ejecución de procesos sino en la demanda del cliente de TI."
+                    },
+                    {
+                        pregunta: "ITIL alcanzó el rango de norma al ser consolidada por la ISO 38500:",
+                        opciones: [
+                            "Esta afirmación es correcta",
+                            "Esta afirmación es parcialmente correcta, pues sólo se da para la fase de Estrategia",
+                            "Esta afirmación es parcialmente correcta, pues sólo se da para la fase de Operación",
+                            "Esta afirmación es incorrecta"
+                        ],
+                        respuesta: 3,
+                        explicacion: "Esta afirmación es incorrecta. ITIL no es una norma ISO, es un marco de buenas prácticas. ITIL nació en 1989 como iniciativa del gobierno británico y ha evolucionado como marco de referencia, pero no ha sido consolidado como norma ISO."
+                    },
+                    {
+                        pregunta: "La iniciativa ITIL nació en:",
+                        opciones: [
+                            "1998",
+                            "1989",
+                            "1999",
+                            "1997"
+                        ],
+                        respuesta: 1,
+                        explicacion: "La iniciativa ITIL nació en 1989 con la publicación de un libro sobre el Service Desk y otro sobre la gestión del nivel de servicio. Ha evolucionado a lo largo de los años extendiéndose a la mayoría de las organizaciones."
+                    },
+                    {
+                        pregunta: "Entre los beneficios que aporta el desarrollo de una arquitectura orientada a servicios, no se encuentra:",
+                        opciones: [
+                            "La mejora de la calidad",
+                            "El enriquecimiento de la comunicación con los usuarios",
+                            "La falta de flexibilidad a los cambios",
+                            "La mejora en la satisfacción de los clientes"
+                        ],
+                        respuesta: 2,
+                        explicacion: "La falta de flexibilidad a los cambios NO es un beneficio. Por el contrario, una arquitectura orientada a servicios AUMENTA la flexibilidad y en consecuencia se obtiene un mejor alcance de las acciones de la organización cuando se dan cambios en las situaciones del mercado."
+                    },
+                    {
+                        pregunta: "El proceso de Gestión de Eventos pertenece a la fase de:",
+                        opciones: [
+                            "Estrategia",
+                            "Diseño",
+                            "Transición",
+                            "Operación"
+                        ],
+                        respuesta: 3,
+                        explicacion: "El proceso de Gestión de Eventos pertenece a la fase de Operación del Servicio. Es responsable de monitorizar todos los eventos que acontezcan en la infraestructura TI con el objetivo de asegurar su correcto funcionamiento y ayudar a prever incidencias futuras."
+                    },
+                    {
+                        pregunta: "El proceso de Validación y pruebas pertenece a la fase de:",
+                        opciones: [
+                            "Estrategia",
+                            "Diseño",
+                            "Transición",
+                            "Operación"
+                        ],
+                        respuesta: 2,
+                        explicacion: "El proceso de Validación y pruebas pertenece a la fase de Transición del Servicio. Es responsable de garantizar que los servicios cumplen los requisitos preestablecidos antes de su paso al entorno de producción."
+                    },
+                    {
+                        pregunta: "El proceso de Seguridad de la información pertenece a la fase de:",
+                        opciones: [
+                            "Estrategia",
+                            "Diseño",
+                            "Transición",
+                            "Operación"
+                        ],
+                        respuesta: 1,
+                        explicacion: "El proceso de Gestión de la Seguridad de la Información pertenece a la fase de Diseño del Servicio. Es responsable de establecer las políticas de integridad, confidencialidad y disponibilidad de la información."
+                    },
+                    {
+                        pregunta: "El proceso de Gestión de proveedores pertenece a la fase de:",
+                        opciones: [
+                            "Estrategia",
+                            "Diseño",
+                            "Transición",
+                            "Operación"
+                        ],
+                        respuesta: 1,
+                        explicacion: "El proceso de Gestión de Proveedores pertenece a la fase de Diseño del Servicio. Es responsable de la relación con los proveedores y el cumplimiento de los UC (Underpinning Contracts)."
+                    },
+                    {
+                        pregunta: "El proceso de Gestión Financiera pertenece a la fase de:",
+                        opciones: [
+                            "Estrategia",
+                            "Diseño",
+                            "Transición",
+                            "Operación"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El proceso de Gestión Financiera pertenece a la fase de Estrategia del Servicio. Es responsable de garantizar la prestación de servicios con unos costes controlados y una correcta relación calidad-precio."
+                    },
+                    {
+                        pregunta: "¿Cuál es el objetivo principal de la fase de Mejora del Servicio?",
+                        opciones: [
+                            "Ofrecer mejores servicios adaptados a las cambiantes necesidades de los clientes",
+                            "Gestionar la infraestructura tecnológica necesaria",
+                            "Diseñar nuevos servicios para el catálogo",
+                            "Coordinar el proceso de transición de servicios"
+                        ],
+                        respuesta: 0,
+                        explicacion: "El objetivo de la Mejora del servicio es ofrecer mejores servicios adaptados a las siempre cambiantes necesidades de los clientes mediante procesos internos optimizados que permitan mayores retornos a la inversión y mayor satisfacción del cliente."
+                    },
+                    {
+                        pregunta: "¿Cuántos pasos tiene el Proceso de Mejora según ITIL?",
+                        opciones: [
+                            "5 pasos",
+                            "6 pasos",
+                            "7 pasos",
+                            "8 pasos"
+                        ],
+                        respuesta: 2,
+                        explicacion: "El Proceso de Mejora es un proceso que consta de 7 pasos que describen cómo se deben medir la calidad y rendimiento de los procesos para generar los informes adecuados que permitan la creación de un Plan de Mejora del Servicio (SIP)."
                     }
                 ]
             }

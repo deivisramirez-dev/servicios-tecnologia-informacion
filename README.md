@@ -47,10 +47,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Videos, artículos, herramientas, bibliografía
 
 ### 🔴 Semana 6: ITIL
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: ITIL, ciclo de vida del servicio, paradigma orientado a servicios
+- [x] **Card Ejemplos**: Service Desk, Gestión de Cambios, Ciclo de Vida Completo
+- [x] **Card Actividades**: Mapeo de procesos, diseño de SLA, análisis de ciclo de vida
+- [x] **Card Recursos**: Videos, artículos, bibliografía, herramientas
 
 ### 🟤 Semana 7: Sistema de Gestión de Servicios
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -77,9 +77,13 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 4. **Semanalmente**: Revisar contenido anterior
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 5/9
+- **Semanas completadas**: 6/9
 - **Secciones disponibles**: 3/3
-- **Progreso**: 56%
+- **Progreso**: 67%
 
 ---
 *Última actualización: [4/11/2025]*
+**Versión:** 1.0.0  
+**Última actualización:** 2025  
+**Curso:** Servicios de Tecnologías de la Información
+**Desarrollado por:** Docente Deivis Eduard Ramirez Martinez
