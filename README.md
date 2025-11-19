@@ -53,10 +53,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Videos, artículos, bibliografía, herramientas
 
 ### 🟤 Semana 7: Sistema de Gestión de Servicios
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: ISO/IEC 20000-1, Sistema de Gestión del Servicio (SGS), procesos de provisión y control
+- [x] **Card Ejemplos**: Casos de certificación e implementación de SGS
+- [x] **Card Actividades**: Análisis de procesos, diseño de servicios, comparación ITIL vs ISO/IEC 20000
+- [x] **Card Recursos**: Videos, artículos, normativas ISO/IEC 20000
 
 ### ⚫ Semana 8: Gestión de Activos de Software
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -77,12 +77,12 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 4. **Semanalmente**: Revisar contenido anterior
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 6/9
+- **Semanas completadas**: 7/9
 - **Secciones disponibles**: 3/3
-- **Progreso**: 67%
+- **Progreso**: 78%
 
 ---
-*Última actualización: [4/11/2025]*
+*Última actualización: [18/11/2025]*
 **Versión:** 1.0.0  
 **Última actualización:** 2025  
 **Curso:** Servicios de Tecnologías de la Información

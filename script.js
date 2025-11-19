@@ -52,10 +52,10 @@ const courseData = {
         {
             id: 7,
             title: "Sistema de Gestión de Servicios",
-            description: "Por desarrollar según avance del curso",
+            description: "ISO/IEC 20000-1, Sistema de Gestión del Servicio (SGS), procesos de provisión y control",
             icon: "fas fa-server",
             color: "#795548",
-            status: "pending"
+            status: "completed"
         },
         {
             id: 8,
@@ -160,6 +160,21 @@ const projectContent = {
                     "Service Value System (ITIL 4): Sistema operativo con Guiding Principles, Governance, Service Value Chain, Practices",
                     "Beneficios: Mejora de calidad, comunicación con usuarios, flexibilidad, satisfacción del cliente, rendimiento y seguridad"
                 ]
+            },
+            {
+                tema: "Tema 7: Sistema de Gestión de Servicios",
+                conceptos: [
+                    "ISO/IEC 20000-1:2005: Norma internacional para gestión de servicios TI, traducida por AENOR como UNE-ISO/IEC 20000-1:2007",
+                    "Sistema de Gestión del Servicio (SGS): Agrupa actividades para configuración de servicios útiles que satisfagan necesidades de negocio",
+                    "Estructura de la serie ISO/IEC 20000: ISO/IEC 20000-1 (Especificaciones), 20000-2 (Código de buenas prácticas), TR 20000-3 (Alcance), TR 20000-4 (Modelo de referencia), TR 20000-8 (Modelo de valoración), 20000-5 (Adopción incremental)",
+                    "Procesos del SGS: Diseño y transición de servicios, Provisión del servicio, Control, Resolución, Relación",
+                    "Principios básicos: Servicio, Cliente, Comunicación interna, Procesos internos",
+                    "Diseño y transición de servicios: Garantiza que servicios se creen y entreguen con funcionalidad, costes y plazos acordados",
+                    "Procesos de provisión del servicio: Gestión del nivel de servicio, Generación de informes, Continuidad y disponibilidad, Presupuesto y contabilidad, Gestión de capacidad, Gestión de seguridad de la información",
+                    "Grupos de procesos: Control, Entrega, Resolución, Relación",
+                    "Beneficios: Resolución rápida de incidentes, mejora de problemas ocultos, conocimiento preciso de configuración, cambios seguros, comprensión de necesidades del cliente, control de costes, mejora en provisión de servicios, garantía de funcionamiento crítico",
+                    "Certificación: La norma permite certificación directa o adopción incremental mediante niveles establecidos por ISO/IEC 20000-5"
+                ]
             }
             ]
         },
@@ -258,7 +273,24 @@ const projectContent = {
                         lecciones: "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
                     }
                     ]
-                }
+                },
+            {
+                tema: "Tema 7: Sistema de Gestión de Servicios",
+                casos: [
+                    {
+                        titulo: "Empresa de Servicios TI: Certificación ISO/IEC 20000-1",
+                        descripcion: "Empresa proveedora de servicios de TI que implementó y certificó ISO/IEC 20000-1 para mejorar la gestión de sus servicios y obtener reconocimiento en el mercado.",
+                        desarrollo: "Situación inicial: La empresa tenía procesos de gestión de servicios desorganizados, con alta tasa de incidencias y baja satisfacción del cliente. Implementación: 1) Evaluación del estado actual según requisitos de ISO/IEC 20000-1, 2) Establecimiento del Sistema de Gestión del Servicio (SGS) con los 5 grupos de procesos, 3) Implementación de procesos de diseño y transición de servicios, 4) Establecimiento de procesos de provisión del servicio (gestión de nivel de servicio, continuidad, capacidad, seguridad), 5) Implementación de procesos de control, resolución y relación, 6) Capacitación del personal en la norma, 7) Auditoría y certificación por organismo acreditado. Resultados: Reducción del 50% en tiempo de resolución de incidencias, mejora del 70% en satisfacción del cliente, certificación ISO/IEC 20000-1 obtenida, incremento del 30% en nuevos contratos gracias al reconocimiento de la certificación, y mejora continua documentada.",
+                        lecciones: "La certificación ISO/IEC 20000-1 proporciona un marco estructurado y certificable que mejora significativamente la calidad de los servicios TI. La implicación de la alta dirección es fundamental para el éxito de la implementación."
+                    },
+                    {
+                        titulo: "Organización Gubernamental: Implementación de SGS con ISO/IEC 20000",
+                        descripcion: "Organización del sector público que implementó el Sistema de Gestión del Servicio basado en ISO/IEC 20000 para estandarizar la provisión de servicios TI a diferentes dependencias.",
+                        desarrollo: "Contexto: La organización necesitaba estandarizar la gestión de servicios TI para múltiples dependencias gubernamentales. Implementación: 1) Análisis de requisitos de servicio de cada dependencia, 2) Diseño del SGS centralizado siguiendo ISO/IEC 20000-1, 3) Implementación de procesos de diseño y transición para nuevos servicios, 4) Establecimiento de procesos de provisión con SLA diferenciados por dependencia, 5) Implementación de procesos de control y resolución centralizados, 6) Generación de informes estandarizados para todas las dependencias, 7) Adopción incremental según ISO/IEC 20000-5. Resultados: Estandarización exitosa de servicios TI, reducción del 40% en costos operativos mediante centralización, mejora del 60% en tiempos de entrega de servicios, satisfacción del 85% de las dependencias, y base sólida para futura certificación.",
+                        lecciones: "La adopción incremental de ISO/IEC 20000 permite implementar el SGS de manera gradual, especialmente útil en organizaciones grandes. La estandarización mejora la eficiencia y reduce costos operativos."
+                    }
+                ]
+            }
             ]
         },
     autoevaluacion: {
@@ -756,6 +788,121 @@ const projectContent = {
                         ],
                         respuesta: 2,
                         explicacion: "El Proceso de Mejora es un proceso que consta de 7 pasos que describen cómo se deben medir la calidad y rendimiento de los procesos para generar los informes adecuados que permitan la creación de un Plan de Mejora del Servicio (SIP)."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 7: Sistema de Gestión de Servicios",
+                preguntas: [
+                    {
+                        pregunta: "Si los servicios de TI que presta la organización son inestables, lentos o inexistentes:",
+                        opciones: [
+                            "La aplicación de la norma mejora su rendimiento sustancialmente.",
+                            "Es el resultado de la falta de implicación de la alta dirección.",
+                            "Es debido a una falta de aplicación del principio de innovación continua.",
+                            "No sirve de nada el modelo de gestión que se implante."
+                        ],
+                        respuesta: 3,
+                        explicacion: "Si los servicios de TI son inestables, lentos o inexistentes, no sirve de nada el modelo de gestión que se implante. La misión esencial de las TI es proveer servicios que faciliten la labor de las áreas de la organización."
+                    },
+                    {
+                        pregunta: "La norma ISO/IEC 20000-1:2005:",
+                        opciones: [
+                            "Proporciona un catálogo de buenas prácticas en la gestión de servicios TI.",
+                            "Regula la calidad del desarrollo de software.",
+                            "Regula el control de la calidad de los servicio de TI.",
+                            "Regula el sistema de gestión de servicios de TI."
+                        ],
+                        respuesta: 3,
+                        explicacion: "La norma ISO/IEC 20000-1:2005 regula el sistema de gestión de servicios de TI. Fue traducida por AENOR como UNE-ISO/IEC 20000-1:2007 y representa el consenso internacional en la forma de gestionar los servicios de las TI."
+                    },
+                    {
+                        pregunta: "Podemos decir que:",
+                        opciones: [
+                            "La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas COBIT.",
+                            "El catálogo de buenas prácticas ITIL ha refrendado la serie de normas ISO/IEC 20000.",
+                            "La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas ITIL.",
+                            "La norma ISO/IEC 20000-1:2007 aporta un valor añadido a la de la edición 2005."
+                        ],
+                        respuesta: 2,
+                        explicacion: "La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas ITIL. La norma ISO/IEC 20000-1 representa el consenso internacional sobre cómo gestionar los servicios de TI."
+                    },
+                    {
+                        pregunta: "Esta norma facilita la resolución y gestión de problemáticas como:",
+                        opciones: [
+                            "Resolución rápida de incidentes en el servicio.",
+                            "Realización de cambios de forma segura y eficiente.",
+                            "Mejora en la provisión de nuevos servicios.",
+                            "Todas las anteriores son correctas."
+                        ],
+                        respuesta: 3,
+                        explicacion: "La norma ISO/IEC 20000-1 facilita la resolución rápida de incidentes, la realización de cambios seguros y eficientes, la mejora en la provisión de nuevos servicios, y muchas otras problemáticas relacionadas con la gestión de servicios TI."
+                    },
+                    {
+                        pregunta: "Entre los principios que rigen la norma no se encuentra:",
+                        opciones: [
+                            "El cliente.",
+                            "El servicio.",
+                            "La reducción de costes.",
+                            "La comunicación interna."
+                        ],
+                        respuesta: 2,
+                        explicacion: "Los principios que rigen la norma son: el servicio, el cliente, la comunicación interna y los procesos internos. La reducción de costes no es un principio, aunque la norma sí ayuda a identificar y controlar costes."
+                    },
+                    {
+                        pregunta: "Con la idea de evaluar la implantación de la familia de normas 20000 se crearon:",
+                        opciones: [
+                            "La ISO/IEC TR 20000-2 y 20000-3.",
+                            "La ISO/IEC TR 20000-3 y 20000-4.",
+                            "La ISO/IEC TR 20000-6 y 20000-8.",
+                            "La ISO/IEC TR 20000-4 y 20000-8."
+                        ],
+                        respuesta: 3,
+                        explicacion: "Para evaluar la implantación de las normas se crearon la ISO/IEC TR 20000-8 (Modelo de valoración de gestión del servicio) y la ISO/IEC TR 20000-4 (Modelo de referencia de procesos)."
+                    },
+                    {
+                        pregunta: "La adopción incremental por niveles de la norma viene regulada en:",
+                        opciones: [
+                            "La ISO/IEC 20000-2.",
+                            "La ISO/IEC 20000-3.",
+                            "La ISO/IEC 20000-4.",
+                            "La ISO/IEC 20000-5."
+                        ],
+                        respuesta: 3,
+                        explicacion: "La adopción incremental mediante la aplicación paulatina de los niveles establecidos viene regulada en la ISO/IEC 20000-5. Esto permite una implementación gradual del sistema de gestión de servicios."
+                    },
+                    {
+                        pregunta: "Entre los procesos en los que se agrupan las actividades de la norma, no se encuentra:",
+                        opciones: [
+                            "La provisión de servicio.",
+                            "El control.",
+                            "La configuración del servicio.",
+                            "La resolución."
+                        ],
+                        respuesta: 2,
+                        explicacion: "Los procesos en los que se agrupan las actividades son: Diseño y transición de servicios, Provisión del servicio, Control, Resolución y Relación. La configuración del servicio no es un grupo de procesos principal."
+                    },
+                    {
+                        pregunta: "El proceso de generación de informes del servicio se encuentra entre los procesos de:",
+                        opciones: [
+                            "Provisión del servicio.",
+                            "Control.",
+                            "Resolución.",
+                            "Relación."
+                        ],
+                        respuesta: 0,
+                        explicacion: "El proceso de generación de informes del servicio se encuentra entre los procesos de provisión del servicio, junto con la gestión del nivel de servicio, continuidad y disponibilidad, presupuesto y contabilidad, gestión de capacidad y gestión de seguridad."
+                    },
+                    {
+                        pregunta: "El diseño y transición de servicios nuevos o modificados tiene como misión:",
+                        opciones: [
+                            "El mantenimiento del nivel de servicio dentro de un óptimo.",
+                            "La detección inmediata de errores.",
+                            "El mantenerse alineado con la creación y evolución de servicios de negocio.",
+                            "La comunicación interna."
+                        ],
+                        respuesta: 2,
+                        explicacion: "El diseño y transición de servicios nuevos o modificados tiene como misión garantizar que los servicios de TI se puedan crear y entregar con la funcionalidad, costes y plazos acordados, manteniéndose alineado con la creación y evolución de servicios de negocio."
                     }
                 ]
             }
