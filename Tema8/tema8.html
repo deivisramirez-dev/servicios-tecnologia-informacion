@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 8: Gestión de Activos de Software - Proyecto de Aula</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .topic-page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+        .topic-header {
+            background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .topic-header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        .topic-header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header común -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-graduation-cap"></i> Proyecto de Aula</h1>
+                <h2>Servicios de Tecnología de la Información</h2>
+                <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+            </div>
+        </header>
+
+        <div class="topic-page-container">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al Proyecto de Aula
+        </a>
+
+        <div class="topic-header">
+            <h1><i class="fas fa-laptop-code"></i> Gestión de Activos de Software</h1>
+            <p>ISO/IEC 19770-1, SGAS, SAM, procesos de gestión de activos de software</p>
+        </div>
+
+        <div class="topic-page">
+            <!-- Conceptos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>Conceptos Clave</h2>
+                </div>
+                <div class="section-content">
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-cogs"></i> SGAS: Sistema de Gestión de Activos de Software</h3>
+                        <p><strong>Definición:</strong> Un sistema de gestión de activos de software (SGAS) se comporta como un mecanismo de gestión de riesgos para el control del software. El software es la pieza fundamental que configura los servicios de TI.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Justificación de la Necesidad</h4>
+                                <p>La falta de disponibilidad de un activo de la entidad de un servicio de TI debido a una mala gestión repercutirá en la consecución de los objetivos de la organización. Desde el punto de vista de la organización, cualquier inversión para evitar riesgos debe ser considerada y analizada.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios del SGAS</h4>
+                                <ul>
+                                    <li><strong>Control de riesgos:</strong> Gestión eficiente de activos de software</li>
+                                    <li><strong>Mejora en utilización:</strong> Mayor eficiencia y aprovechamiento</li>
+                                    <li><strong>Reducción de costes:</strong> Optimización de recursos</li>
+                                    <li><strong>Mejora de productividad:</strong> Uso eficiente en términos de tiempo</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Relación con Gestión de Configuración</h4>
+                                <p>De manera procedimental, los SGAS han sido incluidos dentro del proceso de la gestión de la configuración del software, formando parte integral del sistema de gestión de servicios de TI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-book"></i> SAM vs SGAS</h3>
+                        <p><strong>Diferencia fundamental:</strong> Aunque ambos términos están relacionados, existen diferencias importantes entre SGAS y SAM (Software Asset Management).</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>SGAS (Sistema de Gestión de Activos de Software)</h4>
+                                <p><strong>Alcance:</strong> Mayor extensión que SAM. Abarca el sistema mediante el cual se hará la gestión del software y sus correspondientes procesos, es decir, la propia disciplina de implementación.</p>
+                                <p><strong>Componentes:</strong> Incluye el sistema completo de gestión, procesos, herramientas, políticas y procedimientos.</p>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>SAM (Software Asset Management)</h4>
+                                <p><strong>Alcance:</strong> Hace referencia a la gestión y a los procesos sin incluir la descripción del sistema mediante el cual se gestionarán los activos de software.</p>
+                                <p><strong>Origen:</strong> Basado en el libro "Software Asset Management" de ITIL publicado en 2003.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-history"></i> Antecedentes Históricos</h3>
+                        <p><strong>Origen:</strong> El origen de los sistemas de gestión de activos del software data del año 2004, tomando como punto de partida publicaciones del año 2003.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Evolución</h4>
+                                <ul>
+                                    <li><strong>2003:</strong> Publicación del libro "Software Asset Management" como parte de la biblioteca de ITIL</li>
+                                    <li><strong>2004:</strong> Origen de los sistemas de gestión de activos del software</li>
+                                    <li><strong>2005:</strong> Necesidad establecida por ISO/IEC 20000-1:2005</li>
+                                    <li><strong>2006:</strong> Primera versión de ISO/IEC 19770-1</li>
+                                    <li><strong>2009:</strong> Publicación de ISO/IEC 19770-2</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Relación con ITIL</h4>
+                                <p>Los SGAS se han asimilado a lo establecido en la publicación Software Asset Management de ITIL. A la vez que se implantaban los sistemas de gestión de servicios de tecnología, iba creciendo la necesidad de aplicar los conceptos relacionados con la gestión de los activos de software.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-certificate"></i> ISO/IEC 19770-1:2008 - Parte 1: Procesos</h3>
+                        <p><strong>Definición:</strong> La primera versión de la norma ISO/IEC 19770-1 sobre la gestión de activos de software se publicó en el año 2006. La publicación española es UNE-ISO/IEC 19770-1:2008.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Estructura del Documento</h4>
+                                <ul>
+                                    <li>Descripción del objeto y campo de aplicación</li>
+                                    <li>Conformidad</li>
+                                    <li>Términos y definiciones</li>
+                                    <li>Descripción de los procesos SAM</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>27 Procesos SAM</h4>
+                                <p>Los procesos se agrupan en tres niveles:</p>
+                                <ul>
+                                    <li><strong>Procesos de gestión organizativa:</strong> Aplicables a cualquier tipo de organización, incluyendo aquellas con procesos subcontratados o externalizados</li>
+                                    <li><strong>Procesos centrales:</strong> Procesos fundamentales del sistema</li>
+                                    <li><strong>Interfaces de los procesos principales:</strong> Conexiones entre procesos</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Uso de la Norma</h4>
+                                <p>La primera parte forma el cuerpo fundamental de la norma y se utiliza para:</p>
+                                <ul>
+                                    <li>Implantación del SGAS</li>
+                                    <li>Auditoría del sistema</li>
+                                    <li>Certificación de la organización</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-tags"></i> ISO/IEC 19770-2:2009 - Parte 2: Etiqueta de Identificación</h3>
+                        <p><strong>Definición:</strong> La segunda parte de la norma propone el etiquetado del software mediante etiquetas XML (Extensible Markup Language) con la intención de facilitar la identificación de estos productos.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Cinco Grupos de Objetivos</h4>
+                                <ul>
+                                    <li><strong>Proveedores de plataformas:</strong> Sistemas operativos y entornos de ejecución</li>
+                                    <li><strong>Proveedores de software:</strong> Desarrolladores y distribuidores de software</li>
+                                    <li><strong>Proveedores de etiquetas:</strong> Entidades que generan y gestionan etiquetas</li>
+                                    <li><strong>Proveedores de software de descubrimiento:</strong> Herramientas de inventario y detección</li>
+                                    <li><strong>Usuarios finales:</strong> Organizaciones que utilizan el software</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios del Etiquetado</h4>
+                                <ul>
+                                    <li>Identificación automatizada de software</li>
+                                    <li>Reducción de errores manuales</li>
+                                    <li>Facilidad de inventario y auditoría</li>
+                                    <li>Mejora en la gestión de licencias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-rocket"></i> Implantación de la Gestión</h3>
+                        <p><strong>Proceso:</strong> La implantación de un SGAS no es ajena a las dificultades de implantación de cualquier sistema de gestión. Requiere impulso de la gerencia y motivación en todos los niveles.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Etapas de Implantación</h4>
+                                <ol>
+                                    <li><strong>Definición de objetivos:</strong>
+                                        <ul>
+                                            <li>Gestión de riesgos</li>
+                                            <li>Control de costes</li>
+                                            <li>Ventaja competitiva</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Creación de un caso de negocio</strong></li>
+                                    <li><strong>Planteamiento del proyecto</strong></li>
+                                    <li><strong>Definición de procesos:</strong>
+                                        <ul>
+                                            <li>Procesos de gestión organizativa</li>
+                                            <li>Procesos centrales</li>
+                                            <li>Interfaces de los procesos principales para SAM</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Política de Software</strong></li>
+                                    <li><strong>Base de datos de la gestión de configuración (CMDB)</strong></li>
+                                    <li><strong>Herramientas</strong></li>
+                                    <li><strong>Formación y certificación profesional</strong> (ISO 20000 e ISO 19770)</li>
+                                </ol>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Factores Críticos de Éxito</h4>
+                                <ul>
+                                    <li><strong>Impulso de la gerencia:</strong> Iniciativa propia desde la alta dirección</li>
+                                    <li><strong>Motivación organizacional:</strong> La necesidad debe calar hasta el escalón más bajo</li>
+                                    <li><strong>Compromiso:</strong> Participación activa de todos los niveles</li>
+                                    <li><strong>Recursos adecuados:</strong> Herramientas, formación y tiempo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-sync-alt"></i> Ciclo de Vida de los Activos de Software</h3>
+                        <p><strong>Definición:</strong> El ciclo de vida de los activos de software comprende todas las etapas desde la adquisición hasta la retirada, requiriendo gestión eficiente en cada fase para optimizar recursos y garantizar el cumplimiento normativo.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Etapas del Ciclo de Vida</h4>
+                                <ol>
+                                    <li><strong>Adquisición:</strong> Evaluación, selección y compra de software según necesidades organizacionales</li>
+                                    <li><strong>Implementación:</strong> Instalación, configuración y despliegue del software en la infraestructura</li>
+                                    <li><strong>Mantenimiento:</strong> Actualizaciones, parches, soporte técnico y gestión de versiones</li>
+                                    <li><strong>Operación:</strong> Uso activo del software, monitoreo de rendimiento y satisfacción de usuarios</li>
+                                    <li><strong>Actualización:</strong> Migración a nuevas versiones o mejoras del software</li>
+                                    <li><strong>Retirada:</strong> Desinstalación, migración de datos y disposición final del software</li>
+                                </ol>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Importancia de la Gestión por Etapas</h4>
+                                <ul>
+                                    <li><strong>Optimización de recursos:</strong> Identificar software infrautilizado o redundante</li>
+                                    <li><strong>Control de costes:</strong> Gestionar renovaciones y evitar licencias innecesarias</li>
+                                    <li><strong>Cumplimiento normativo:</strong> Asegurar uso legal y actualizado del software</li>
+                                    <li><strong>Seguridad:</strong> Mantener software actualizado y sin vulnerabilidades</li>
+                                    <li><strong>Planificación estratégica:</strong> Anticipar necesidades futuras y migraciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-file-contract"></i> Gestión de Licencias y Cumplimiento</h3>
+                        <p><strong>Definición:</strong> La gestión adecuada de licencias de software es fundamental para evitar incumplimientos legales, optimizar costos y asegurar el uso correcto de los activos de software.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Tipos de Licencias de Software</h4>
+                                <ul>
+                                    <li><strong>Por usuario:</strong> Licencia asignada a un usuario específico (Named User)</li>
+                                    <li><strong>Por dispositivo:</strong> Licencia vinculada a un equipo físico específico</li>
+                                    <li><strong>Por servidor:</strong> Licencia basada en el número de servidores</li>
+                                    <li><strong>Por núcleo/procesador:</strong> Licencia según capacidad de procesamiento</li>
+                                    <li><strong>Concurrente:</strong> Licencia compartida por múltiples usuarios simultáneos</li>
+                                    <li><strong>Suscripción:</strong> Licencia renovable periódicamente (SaaS)</li>
+                                    <li><strong>Perpetua:</strong> Licencia de uso indefinido con mantenimiento opcional</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Auditorías de Cumplimiento</h4>
+                                <ul>
+                                    <li><strong>Auditorías internas:</strong> Revisión periódica del uso vs. licencias adquiridas</li>
+                                    <li><strong>Auditorías de proveedores:</strong> Verificaciones realizadas por fabricantes de software</li>
+                                    <li><strong>Riesgos de incumplimiento:</strong> Multas, demandas legales, pérdida de reputación</li>
+                                    <li><strong>Documentación:</strong> Mantener registros de todas las licencias y contratos</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Gestión de Renovaciones</h4>
+                                <ul>
+                                    <li><strong>Calendario de renovaciones:</strong> Seguimiento de fechas de vencimiento</li>
+                                    <li><strong>Evaluación de uso:</strong> Analizar si se requiere renovar o reducir licencias</li>
+                                    <li><strong>Negociación:</strong> Optimizar costos en renovaciones</li>
+                                    <li><strong>Migración:</strong> Evaluar alternativas más económicas o eficientes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-dollar-sign"></i> Optimización de Costos</h3>
+                        <p><strong>Definición:</strong> La optimización de costos en gestión de activos de software busca reducir gastos mediante la identificación de oportunidades de consolidación, eliminación de software infrautilizado y negociación estratégica.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Estrategias de Optimización</h4>
+                                <ul>
+                                    <li><strong>Consolidación de licencias:</strong> Unificar licencias similares de diferentes proveedores</li>
+                                    <li><strong>Eliminación de software infrautilizado:</strong> Identificar y retirar software no utilizado</li>
+                                    <li><strong>Negociación con proveedores:</strong> Obtener mejores precios mediante contratos consolidados</li>
+                                    <li><strong>Análisis de ROI:</strong> Evaluar el retorno de inversión de cada activo de software</li>
+                                    <li><strong>Software de código abierto:</strong> Evaluar alternativas open source cuando sea viable</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Métricas de Optimización</h4>
+                                <ul>
+                                    <li><strong>Costo por usuario:</strong> Análisis del costo total dividido por número de usuarios</li>
+                                    <li><strong>Tasa de utilización:</strong> Porcentaje de licencias realmente utilizadas</li>
+                                    <li><strong>Software redundante:</strong> Identificación de aplicaciones con funcionalidades duplicadas</li>
+                                    <li><strong>Costos de mantenimiento:</strong> Evaluación de costos anuales de soporte y actualizaciones</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios de la Optimización</h4>
+                                <ul>
+                                    <li>Reducción de costos operativos entre 15-30%</li>
+                                    <li>Mejora en la eficiencia del uso de recursos</li>
+                                    <li>Mejor alineación con objetivos estratégicos</li>
+                                    <li>Mayor visibilidad y control financiero</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-shield-alt"></i> Seguridad y Gestión de Riesgos</h3>
+                        <p><strong>Definición:</strong> Una gestión inadecuada de activos de software puede exponer a la organización a riesgos de seguridad, vulnerabilidades y problemas de cumplimiento normativo.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Riesgos de Seguridad</h4>
+                                <ul>
+                                    <li><strong>Vulnerabilidades no parcheadas:</strong> Software desactualizado con vulnerabilidades conocidas</li>
+                                    <li><strong>Software sin soporte (End-of-Life):</strong> Aplicaciones que ya no reciben actualizaciones de seguridad</li>
+                                    <li><strong>Software no autorizado:</strong> Aplicaciones instaladas sin aprobación (shadow IT)</li>
+                                    <li><strong>Licencias no gestionadas:</strong> Software sin licencia que puede contener malware</li>
+                                    <li><strong>Dependencias obsoletas:</strong> Bibliotecas y componentes desactualizados</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Gestión de Actualizaciones y Parches</h4>
+                                <ul>
+                                    <li><strong>Política de parches:</strong> Establecer procesos para aplicar actualizaciones de seguridad</li>
+                                    <li><strong>Testing de actualizaciones:</strong> Probar parches antes del despliegue en producción</li>
+                                    <li><strong>Ventanas de mantenimiento:</strong> Planificar actualizaciones para minimizar impacto</li>
+                                    <li><strong>Automatización:</strong> Implementar actualizaciones automáticas cuando sea seguro</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Evaluación de Riesgos</h4>
+                                <ul>
+                                    <li><strong>Inventario de vulnerabilidades:</strong> Identificar software con vulnerabilidades conocidas</li>
+                                    <li><strong>Clasificación de riesgos:</strong> Priorizar según criticidad y exposición</li>
+                                    <li><strong>Plan de mitigación:</strong> Estrategias para reducir o eliminar riesgos</li>
+                                    <li><strong>Monitoreo continuo:</strong> Seguimiento de nuevas vulnerabilidades y amenazas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-network-wired"></i> Integración con Otros Sistemas</h3>
+                        <p><strong>Definición:</strong> Los sistemas de gestión de activos de software deben integrarse eficazmente con otros sistemas de gestión de TI para maximizar su valor y eficiencia.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Integración con ITIL</h4>
+                                <ul>
+                                    <li><strong>CMDB (Configuration Management Database):</strong> Base de datos centralizada de activos y configuraciones</li>
+                                    <li><strong>Service Desk:</strong> Relación entre incidencias y activos de software</li>
+                                    <li><strong>Gestión de Cambios:</strong> Evaluar impacto de cambios en activos de software</li>
+                                    <li><strong>Gestión de Problemas:</strong> Identificar patrones relacionados con activos específicos</li>
+                                    <li><strong>Catálogo de Servicios:</strong> Relacionar servicios con activos de software necesarios</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Integración con ISO/IEC 20000</h4>
+                                <ul>
+                                    <li><strong>Procesos de gestión de configuración:</strong> Alineación con requisitos de ISO 20000</li>
+                                    <li><strong>Control de cambios:</strong> Integración con procesos de cambio del SGS</li>
+                                    <li><strong>Gestión de nivel de servicio:</strong> Impacto de activos en cumplimiento de SLA</li>
+                                    <li><strong>Mejora continua:</strong> Uso de métricas de activos para mejora de servicios</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Integración con COBIT</h4>
+                                <ul>
+                                    <li><strong>Gobierno de activos:</strong> Alineación con objetivos de control de COBIT</li>
+                                    <li><strong>Gestión de riesgos:</strong> Evaluación de riesgos de activos según COBIT</li>
+                                    <li><strong>Gestión de recursos:</strong> Optimización de recursos de TI</li>
+                                    <li><strong>Medición y evaluación:</strong> KPIs de activos alineados con COBIT</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Integración con Sistemas Empresariales</h4>
+                                <ul>
+                                    <li><strong>ERP:</strong> Integración con sistemas de gestión empresarial</li>
+                                    <li><strong>Financieros:</strong> Conexión con sistemas de contabilidad y presupuestos</li>
+                                    <li><strong>RRHH:</strong> Relación entre usuarios y licencias asignadas</li>
+                                    <li><strong>Compras:</strong> Integración con procesos de adquisición</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-detail">
+                        <h3><i class="fas fa-robot"></i> Automatización e Inteligencia Artificial en SAM</h3>
+                        <p><strong>Definición:</strong> La automatización y la inteligencia artificial están transformando la gestión de activos de software, permitiendo procesos más eficientes y decisiones basadas en datos.</p>
+                        <div class="concept-breakdown">
+                            <div class="breakdown-item">
+                                <h4>Descubrimiento Automático de Activos</h4>
+                                <ul>
+                                    <li><strong>Escaneo de red:</strong> Detección automática de software instalado en la red</li>
+                                    <li><strong>Agentes de inventario:</strong> Software instalado en equipos para recopilar información</li>
+                                    <li><strong>Integración con directorios:</strong> Sincronización con Active Directory u otros sistemas</li>
+                                    <li><strong>Detección de software no autorizado:</strong> Identificación de shadow IT</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Categorización Inteligente</h4>
+                                <ul>
+                                    <li><strong>Machine Learning:</strong> Clasificación automática de software por categorías</li>
+                                    <li><strong>Reconocimiento de patrones:</strong> Identificación de software similar o redundante</li>
+                                    <li><strong>Análisis de uso:</strong> Determinación automática de software activo vs. inactivo</li>
+                                    <li><strong>Normalización de datos:</strong> Unificación de información de diferentes fuentes</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Predicción y Análisis Predictivo</h4>
+                                <ul>
+                                    <li><strong>Predicción de necesidades:</strong> Anticipar requerimientos futuros de software</li>
+                                    <li><strong>Análisis de tendencias:</strong> Identificar patrones de uso y crecimiento</li>
+                                    <li><strong>Optimización proactiva:</strong> Recomendaciones automáticas de optimización</li>
+                                    <li><strong>Alertas inteligentes:</strong> Notificaciones sobre riesgos o oportunidades</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <h4>Beneficios de la Automatización</h4>
+                                <ul>
+                                    <li><strong>Reducción de errores:</strong> Menos errores manuales en inventario</li>
+                                    <li><strong>Ahorro de tiempo:</strong> Automatización de tareas repetitivas</li>
+                                    <li><strong>Mayor precisión:</strong> Datos más actualizados y confiables</li>
+                                    <li><strong>Escalabilidad:</strong> Gestión eficiente de grandes volúmenes de activos</li>
+                                    <li><strong>Decisiones basadas en datos:</strong> Análisis más profundos y objetivos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-flask"></i>
+                    <h2>Ejemplos Prácticos</h2>
+                </div>
+                <div class="section-content">
+                    <div class="example-section">
+                        <h3>Caso de Estudio: Tecnofor</h3>
+                        <div class="caso-card">
+                            <h4>Tecnofor: Certificación ISO/IEC 19770-1:2008</h4>
+                            <p class="caso-descripcion">Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.</p>
+                            <div class="caso-desarrollo">
+                                <h5>Desarrollo:</h5>
+                                <p><strong>Contexto:</strong> Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software.</p>
+                                <p><strong>Implementación:</strong></p>
+                                <ol>
+                                    <li>Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva)</li>
+                                    <li>Creación de caso de negocio justificando la inversión</li>
+                                    <li>Planteamiento del proyecto de implantación</li>
+                                    <li>Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces)</li>
+                                    <li>Establecimiento de política de software</li>
+                                    <li>Configuración de base de datos de gestión de configuración (CMDB)</li>
+                                    <li>Selección e implementación de herramientas</li>
+                                    <li>Formación y certificación profesional del equipo</li>
+                                </ol>
+                                <p><strong>Resultados:</strong></p>
+                                <ul>
+                                    <li>Recuperación de la inversión en el primer año</li>
+                                    <li>Control efectivo de costes</li>
+                                    <li>Aumento de la productividad</li>
+                                    <li>Reducción significativa de riesgos asociados a la gestión de activos de software</li>
+                                    <li>Obtención de la certificación ISO/IEC 19770-1:2008</li>
+                                </ul>
+                            </div>
+                            <div class="caso-lecciones">
+                                <h5>Lecciones aprendidas:</h5>
+                                <p>La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización, siendo especialmente valiosa para empresas pequeñas que buscan diferenciarse en el mercado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-section">
+                        <h3>Aplicaciones en Diferentes Sectores</h3>
+                        <div class="example-grid">
+                            <div class="example-item">
+                                <i class="fas fa-building"></i>
+                                <span>Empresas de Tecnología: Control de licencias de desarrollo</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Instituciones Educativas: Gestión de software académico</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-hospital"></i>
+                                <span>Sector Salud: Control de software médico y administrativo</span>
+                            </div>
+                            <div class="example-item">
+                                <i class="fas fa-industry"></i>
+                                <span>Manufactura: Gestión de software de producción y ERP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividades Section -->
+            <section class="topic-section">
+                <div class="section-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Actividades de Refuerzo</h2>
+                </div>
+                <div class="section-content">
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Análisis de Necesidad de SGAS (20 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Identificar la necesidad de implementar un SGAS en una organización</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Selecciona una organización que conozcas (puede ser tu universidad, empresa familiar, etc.)</li>
+                                    <li>Identifica los riesgos asociados a la falta de gestión de activos de software</li>
+                                    <li>Estima los costes potenciales de una mala gestión</li>
+                                    <li>Define al menos 3 objetivos estratégicos que justificarían la implantación de un SGAS</li>
+                                    <li>Elabora un caso de negocio básico (1 página) justificando la inversión</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Mapeo de Procesos SAM (25 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Comprender la estructura de los 27 procesos SAM según ISO/IEC 19770-1</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Investiga sobre los 27 procesos SAM de la norma ISO/IEC 19770-1</li>
+                                    <li>Clasifica al menos 10 procesos en los tres niveles:
+                                        <ul>
+                                            <li>Procesos de gestión organizativa</li>
+                                            <li>Procesos centrales</li>
+                                            <li>Interfaces de los procesos principales</li>
+                                        </ul>
+                                    </li>
+                                    <li>Identifica qué procesos serían prioritarios para una PYME</li>
+                                    <li>Explica cómo se relacionan estos procesos con ITIL y ISO 20000</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-section">
+                        <div class="activity-header">
+                            <h3>Diseño de Política de Software (15 min)</h3>
+                            <div class="activity-meta">
+                                <span class="duration"><i class="fas fa-clock"></i> Duración estimada</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-objective">
+                                <h4><i class="fas fa-target"></i> Objetivo</h4>
+                                <p>Diseñar una política básica de gestión de activos de software</p>
+                            </div>
+                            <div class="activity-instructions">
+                                <h4><i class="fas fa-list-ol"></i> Instrucciones</h4>
+                                <ol>
+                                    <li>Define el alcance de la política (qué software se incluye)</li>
+                                    <li>Establece responsabilidades (quién gestiona qué)</li>
+                                    <li>Define procedimientos básicos:
+                                        <ul>
+                                            <li>Adquisición de software</li>
+                                            <li>Inventario y registro</li>
+                                            <li>Control de licencias</li>
+                                            <li>Retiro y disposición</li>
+                                        </ul>
+                                    </li>
+                                    <li>Incluye aspectos de cumplimiento legal y auditoría</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -59,10 +59,10 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 - [x] **Card Recursos**: Videos, artículos, normativas ISO/IEC 20000
 
 ### ⚫ Semana 8: Gestión de Activos de Software
-- [ ] **Card Conceptos**: [Por desarrollar]
-- [ ] **Card Ejemplos**: [Por agregar]
-- [ ] **Card Actividades**: [Por diseñar]
-- [ ] **Card Recursos**: [Por incluir]
+- [x] **Card Conceptos**: ISO/IEC 19770-1, SGAS, SAM, procesos de gestión de activos de software
+- [x] **Card Ejemplos**: Caso Tecnofor - Certificación ISO/IEC 19770-1:2008
+- [x] **Card Actividades**: Análisis de necesidad, mapeo de procesos SAM, diseño de política de software
+- [x] **Card Recursos**: Normativas ISO/IEC 19770, artículos, herramientas, videos
 
 ### ⚪ Semana 9: Gestión de la Continuidad del Negocio
 - [ ] **Card Conceptos**: [Por desarrollar]
@@ -77,9 +77,9 @@ Este proyecto de aula funciona como **material complementario** a las clases pre
 4. **Semanalmente**: Revisar contenido anterior
 
 ## 📊 Progreso del Curso
-- **Semanas completadas**: 7/9
+- **Semanas completadas**: 8/9
 - **Secciones disponibles**: 3/3
-- **Progreso**: 78%
+- **Progreso**: 89%
 
 ---
 *Última actualización: [18/11/2025]*

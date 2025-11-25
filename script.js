@@ -60,10 +60,10 @@ const courseData = {
         {
             id: 8,
             title: "Gestión de Activos de Software",
-            description: "Por desarrollar según avance del curso",
+            description: "ISO/IEC 19770-1, SGAS, SAM, procesos de gestión de activos de software",
             icon: "fas fa-laptop-code",
             color: "#343a40",
-            status: "pending"
+            status: "completed"
         },
         {
             id: 9,
@@ -174,6 +174,22 @@ const projectContent = {
                     "Grupos de procesos: Control, Entrega, Resolución, Relación",
                     "Beneficios: Resolución rápida de incidentes, mejora de problemas ocultos, conocimiento preciso de configuración, cambios seguros, comprensión de necesidades del cliente, control de costes, mejora en provisión de servicios, garantía de funcionamiento crítico",
                     "Certificación: La norma permite certificación directa o adopción incremental mediante niveles establecidos por ISO/IEC 20000-5"
+                ]
+            },
+            {
+                tema: "Tema 8: Gestión de Activos de Software",
+                conceptos: [
+                    "SGAS: Sistema de Gestión de Activos de Software - mecanismo de gestión de riesgos para el control del software",
+                    "SAM: Software Asset Management - gestión y procesos de activos de software (diferente de SGAS que incluye el sistema completo)",
+                    "ISO/IEC 19770-1:2008: Norma para gestión de activos de software - Parte 1: Procesos (publicación española UNE-ISO/IEC 19770-1:2008)",
+                    "ISO/IEC 19770-2:2009: Norma para gestión de activos de software - Parte 2: Etiqueta de identificación de software",
+                    "27 procesos SAM: Agrupados en tres niveles - Procesos de gestión organizativa, Procesos centrales, Interfaces de los procesos principales",
+                    "Origen histórico: Data de 2004, basado en publicaciones de 2003 del libro Software Asset Management de ITIL",
+                    "Gestión de configuración: Los SGAS se incluyen procedimentalmente dentro del proceso de gestión de configuración del software",
+                    "Etiquetado XML: La parte 2 de la norma propone etiquetado del software mediante etiquetas XML para facilitar identificación",
+                    "Cinco grupos de objetivos (Parte 2): Proveedores de plataformas, Proveedores de software, Proveedores de etiquetas, Proveedores de software de descubrimiento, Usuarios finales",
+                    "Justificación: Control de riesgos, mejora en utilización de activos, mayor eficiencia y aprovechamiento en términos de tiempo y coste",
+                    "Implantación: Requiere impulso de la gerencia, definición de objetivos (gestión de riesgos, control de costes, ventaja competitiva), creación de caso de negocio, definición de procesos, política de software, CMDB, herramientas y formación"
                 ]
             }
             ]
@@ -288,6 +304,17 @@ const projectContent = {
                         descripcion: "Organización del sector público que implementó el Sistema de Gestión del Servicio basado en ISO/IEC 20000 para estandarizar la provisión de servicios TI a diferentes dependencias.",
                         desarrollo: "Contexto: La organización necesitaba estandarizar la gestión de servicios TI para múltiples dependencias gubernamentales. Implementación: 1) Análisis de requisitos de servicio de cada dependencia, 2) Diseño del SGS centralizado siguiendo ISO/IEC 20000-1, 3) Implementación de procesos de diseño y transición para nuevos servicios, 4) Establecimiento de procesos de provisión con SLA diferenciados por dependencia, 5) Implementación de procesos de control y resolución centralizados, 6) Generación de informes estandarizados para todas las dependencias, 7) Adopción incremental según ISO/IEC 20000-5. Resultados: Estandarización exitosa de servicios TI, reducción del 40% en costos operativos mediante centralización, mejora del 60% en tiempos de entrega de servicios, satisfacción del 85% de las dependencias, y base sólida para futura certificación.",
                         lecciones: "La adopción incremental de ISO/IEC 20000 permite implementar el SGS de manera gradual, especialmente útil en organizaciones grandes. La estandarización mejora la eficiencia y reduce costos operativos."
+                    }
+                ]
+            },
+            {
+                tema: "Tema 8: Gestión de Activos de Software",
+                casos: [
+                    {
+                        titulo: "Tecnofor: Certificación ISO/IEC 19770-1:2008 en empresa de formación",
+                        descripcion: "Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.",
+                        desarrollo: "Contexto: Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software. Implementación: 1) Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva), 2) Creación de caso de negocio justificando la inversión, 3) Planteamiento del proyecto de implantación, 4) Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces), 5) Establecimiento de política de software, 6) Configuración de base de datos de gestión de configuración (CMDB), 7) Selección e implementación de herramientas, 8) Formación y certificación profesional del equipo. Resultados: Recuperación de la inversión en el primer año, control efectivo de costes, aumento de la productividad, reducción significativa de riesgos asociados a la gestión de activos de software, y obtención de la certificación ISO/IEC 19770-1:2008.",
+                        lecciones: "La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización."
                     }
                 ]
             }
@@ -905,6 +932,400 @@ const projectContent = {
                         explicacion: "El diseño y transición de servicios nuevos o modificados tiene como misión garantizar que los servicios de TI se puedan crear y entregar con la funcionalidad, costes y plazos acordados, manteniéndose alineado con la creación y evolución de servicios de negocio."
                     }
                 ]
+            },
+            {
+                tema: "Tema 8: Gestión de Activos de Software",
+                preguntas: [
+                    {
+                        pregunta: "¿Cuál es la pieza fundamental para la configuración de servicios de TI?",
+                        opciones: [
+                            "Los procesos de negocio",
+                            "El hardware",
+                            "Las comunicaciones",
+                            "El software"
+                        ],
+                        respuesta: 3,
+                        explicacion: "El software es la pieza fundamental que configura los servicios de TI. Un sistema de gestión de activos de software (SGAS) se comporta como un mecanismo de gestión de riesgos para el control del software."
+                    },
+                    {
+                        pregunta: "La correcta gestión del software redundará en beneficio de la organización.",
+                        opciones: [
+                            "Esta afirmación es correcta",
+                            "Esta afirmación es correcta sólo en el ámbito de las empresas de desarrollo software",
+                            "Esta afirmación es incorrecta",
+                            "Todas las anteriores son falsas"
+                        ],
+                        respuesta: 0,
+                        explicacion: "La correcta gestión del software redundará en beneficio de la organización. Por el contrario, una mala gestión influirá directamente de manera negativa desde el punto de vista de la falta de uso eficiente de los recursos."
+                    },
+                    {
+                        pregunta: "SGAS y SAM describen la misma realidad:",
+                        opciones: [
+                            "Esta afirmación es correcta",
+                            "Esta afirmación es correcta sólo en el ámbito de las empresas de desarrollo software",
+                            "Esta afirmación es incorrecta",
+                            "Todas las anteriores son falsas"
+                        ],
+                        respuesta: 2,
+                        explicacion: "SGAS y SAM no describen la misma realidad. SGAS tiene mayor extensión que SAM pues abarca el sistema mediante el cual se hará la gestión del software y sus correspondientes procesos. SAM hace referencia a la gestión y procesos sin incluir la descripción del sistema."
+                    },
+                    {
+                        pregunta: "De manera procedimental los SGAS se incluyen dentro del proceso de:",
+                        opciones: [
+                            "Planificación y gestión de negocio",
+                            "Prevención de riesgos",
+                            "Gestión de configuración",
+                            "Calidad del software"
+                        ],
+                        respuesta: 2,
+                        explicacion: "De manera procedimental los SGAS han sido incluidos dentro del proceso de la gestión de la configuración del software."
+                    },
+                    {
+                        pregunta: "El origen de los sistemas de gestión de activos de software data del año:",
+                        opciones: [
+                            "2003",
+                            "2008",
+                            "2004",
+                            "2006"
+                        ],
+                        respuesta: 2,
+                        explicacion: "El origen de los sistemas de gestión de activos del software data del año 2004, tomando como punto de partida publicaciones del año 2003 como el libro Software Asset Management de ITIL."
+                    },
+                    {
+                        pregunta: "¿Con cuál de las directivas o normas no están relacionados los SGAS?",
+                        opciones: [
+                            "ISO 20000",
+                            "ITIL",
+                            "COBIT",
+                            "Ninguna de las anteriores"
+                        ],
+                        respuesta: 3,
+                        explicacion: "Los SGAS están relacionados con ITIL (origen en Software Asset Management de ITIL), ISO 20000 (necesidad establecida por ISO/IEC 20000-1:2005), y pueden relacionarse con COBIT. Por lo tanto, todas las opciones están relacionadas."
+                    },
+                    {
+                        pregunta: "¿Cuántas publicaciones componen la norma 19770?",
+                        opciones: [
+                            "27",
+                            "24",
+                            "22",
+                            "Todas las anteriores son falsas"
+                        ],
+                        respuesta: 3,
+                        explicacion: "La norma ISO/IEC 19770 está constituida por dos publicaciones: ISO/IEC 19770-1:2008 (Procesos) e ISO/IEC 19770-2:2009 (Etiqueta de identificación de software). Las 27 se refieren a los procesos, no a las publicaciones."
+                    },
+                    {
+                        pregunta: "La parte 2 de la norma 19770 describe:",
+                        opciones: [
+                            "Los procesos principales",
+                            "La gestión de activos",
+                            "El procedimiento de etiquetado",
+                            "Los procedimientos de implantación"
+                        ],
+                        respuesta: 2,
+                        explicacion: "La segunda parte de la norma (ISO/IEC 19770-2:2009) propone el etiquetado del software mediante etiquetas XML con la intención de facilitar la identificación de estos productos."
+                    },
+                    {
+                        pregunta: "Los procesos SAM, principalmente engloban:",
+                        opciones: [
+                            "Procesos de gestión organizativa",
+                            "Procesos centrales",
+                            "Interfaces de los procesos principales",
+                            "Todas las anteriores"
+                        ],
+                        respuesta: 3,
+                        explicacion: "Los procesos SAM se agrupan en tres niveles: Procesos de gestión organizativa, Procesos centrales, e Interfaces de los procesos principales. Se identifican un total de veintisiete procesos."
+                    },
+                    {
+                        pregunta: "A la hora de definir los objetivos de implantación de un SGAS se deberá:",
+                        opciones: [
+                            "Hacer un análisis y gestión de riesgos",
+                            "Valorar los costes",
+                            "Analizar su valor añadido y su ventaja competitiva",
+                            "Todas las anteriores"
+                        ],
+                        respuesta: 3,
+                        explicacion: "A la hora de definir los objetivos de implantación de un SGAS se debe considerar: Gestión de riesgos, Control de costes, y Ventaja competitiva. Todos estos aspectos son fundamentales para una implantación exitosa."
+                    }
+                ]
+            }
+        ]
+    },
+    n8n: {
+        title: "n8n - Automatización de Flujos",
+        description: "Guía completa para entender n8n y crear automatizaciones de flujos de trabajo",
+        icon: "fas fa-project-diagram",
+        color: "#ff6b6b",
+        items: [
+            {
+                seccion: "¿Qué es n8n?",
+                conceptos: [
+                    {
+                        titulo: "Definición",
+                        contenido: "n8n es una herramienta de automatización de flujos de trabajo (workflow automation) de código abierto que permite conectar diferentes servicios y automatizar tareas sin necesidad de programar código complejo. El nombre 'n8n' viene de 'n nodes' (n nodos), representando la capacidad de conectar múltiples servicios.",
+                        analogia: "Imagina n8n como un 'chef de cocina' que sigue una receta (flujo) paso a paso: recibe ingredientes (datos), los procesa (transforma), los combina (integra servicios) y produce un plato final (resultado)."
+                    },
+                    {
+                        titulo: "Características Principales",
+                        contenido: "n8n es una plataforma visual de automatización que permite crear flujos de trabajo mediante una interfaz de arrastrar y soltar. Es especialmente útil para automatizar procesos empresariales, integraciones entre sistemas y tareas repetitivas.",
+                        caracteristicas: [
+                            "Interfaz visual intuitiva (drag & drop)",
+                            "Más de 400 integraciones pre-construidas",
+                            "Código abierto y auto-hospedable",
+                            "Versión cloud gratuita disponible",
+                            "Soporte para lógica condicional y loops",
+                            "Manejo de errores y reintentos automáticos"
+                        ]
+                    },
+                    {
+                        titulo: "¿Por qué usar n8n?",
+                        contenido: "n8n permite automatizar procesos que normalmente requieren intervención manual, ahorrando tiempo, reduciendo errores y mejorando la eficiencia operativa.",
+                        beneficios: [
+                            "Ahorro de tiempo en tareas repetitivas",
+                            "Reducción de errores humanos",
+                            "Integración entre diferentes sistemas",
+                            "Automatización de procesos complejos",
+                            "Escalabilidad de operaciones",
+                            "Mejora en la productividad"
+                        ]
+                    }
+                ]
+            },
+            {
+                seccion: "Conceptos Fundamentales",
+                conceptos: [
+                    {
+                        titulo: "Workflow (Flujo de Trabajo)",
+                        contenido: "Un workflow es la secuencia completa de pasos automatizados que n8n ejecuta. Es como una receta que define qué hacer, en qué orden y con qué datos.",
+                        ejemplo: "Ejemplo: Un flujo que recibe datos de software → los clasifica → calcula riesgos → los guarda en Google Sheets → genera un reporte.",
+                        componentes: [
+                            "Nodos conectados en secuencia",
+                            "Lógica de decisión (condiciones)",
+                            "Manejo de datos entre nodos",
+                            "Manejo de errores"
+                        ]
+                    },
+                    {
+                        titulo: "Node (Nodo)",
+                        contenido: "Un nodo es cada paso individual en el flujo. Cada nodo realiza una acción específica: recibir datos, procesarlos, transformarlos, guardarlos, etc.",
+                        tipos: [
+                            "Trigger Nodes: Inician el flujo (Manual, Webhook, Cron, etc.)",
+                            "Action Nodes: Realizan acciones (Google Sheets, Email, HTTP Request, etc.)",
+                            "Core Nodes: Procesan datos (Set, Function, IF, Switch, etc.)",
+                            "Integration Nodes: Conectan con servicios externos (Google, Slack, etc.)"
+                        ],
+                        ejemplo: "En nuestro flujo de inventario: Manual Trigger → Set → Function → Google Sheets. Cada uno es un nodo diferente."
+                    },
+                    {
+                        titulo: "Connection (Conexión)",
+                        contenido: "Las conexiones son las líneas que unen los nodos, indicando el flujo de datos de un nodo al siguiente. Los datos fluyen de izquierda a derecha (o de arriba hacia abajo).",
+                        caracteristicas: [
+                            "Los datos pasan de un nodo al siguiente",
+                            "Un nodo puede tener múltiples conexiones de salida",
+                            "Las conexiones pueden ser condicionales (IF, Switch)",
+                            "Los datos se transforman en cada nodo"
+                        ]
+                    },
+                    {
+                        titulo: "Trigger (Disparador)",
+                        contenido: "El trigger es el nodo que inicia el flujo. Puede activarse manualmente, por un webhook, en un horario programado, o por un evento externo.",
+                        tipos: [
+                            "Manual Trigger: Se ejecuta cuando tú lo activas",
+                            "Webhook: Se activa cuando recibe una petición HTTP",
+                            "Cron: Se ejecuta automáticamente en horarios programados",
+                            "Schedule: Similar a Cron, con opciones más flexibles"
+                        ]
+                    },
+                    {
+                        titulo: "Execution (Ejecución)",
+                        contenido: "Una ejecución es cada vez que el flujo se ejecuta y procesa datos. n8n guarda un historial de todas las ejecuciones, permitiendo revisar qué pasó en cada una.",
+                        informacion: [
+                            "Estado: Éxito, Error, o En ejecución",
+                            "Datos procesados en cada nodo",
+                            "Tiempo de ejecución",
+                            "Logs y mensajes de error"
+                        ]
+                    },
+                    {
+                        titulo: "Item (Elemento de Datos)",
+                        contenido: "Un item es una unidad de datos que fluye por el flujo. Cada item contiene información en formato JSON que puede ser accedida y modificada por los nodos.",
+                        estructura: "Los items tienen una estructura JSON: { 'nombre': 'Microsoft Office', 'version': '2021', 'costo': 120 }",
+                        acceso: "En los nodos Function, accedes a los datos con: $input.all() o $json.campo"
+                    }
+                ]
+            },
+            {
+                seccion: "Tipos de Nodos Principales",
+                conceptos: [
+                    {
+                        titulo: "Nodos Trigger (Disparadores)",
+                        contenido: "Estos nodos inician el flujo de trabajo. Sin un trigger, el flujo no puede ejecutarse.",
+                        ejemplos: [
+                            "Manual Trigger: Para ejecución manual durante pruebas",
+                            "Webhook: Para recibir datos desde aplicaciones externas",
+                            "Cron: Para ejecución programada (diaria, semanal, etc.)",
+                            "Schedule: Para horarios más complejos"
+                        ]
+                    },
+                    {
+                        titulo: "Nodos Core (Núcleo)",
+                        contenido: "Estos nodos procesan y transforman datos. Son fundamentales para la lógica del flujo.",
+                        ejemplos: [
+                            "Set: Define o modifica valores de datos",
+                            "Function: Ejecuta código JavaScript personalizado",
+                            "IF: Toma decisiones basadas en condiciones",
+                            "Switch: Enruta datos por diferentes caminos según condiciones",
+                            "Code: Similar a Function, con más opciones",
+                            "Merge: Combina datos de múltiples fuentes"
+                        ]
+                    },
+                    {
+                        titulo: "Nodos de Integración",
+                        contenido: "Estos nodos conectan n8n con servicios externos como Google, Slack, bases de datos, etc.",
+                        ejemplos: [
+                            "Google Sheets: Leer y escribir en hojas de cálculo",
+                            "Gmail: Enviar y recibir emails",
+                            "HTTP Request: Hacer peticiones a APIs",
+                            "Database: Conectar con bases de datos",
+                            "Slack: Enviar mensajes a canales",
+                            "Webhook (Response): Responder a peticiones HTTP"
+                        ]
+                    }
+                ]
+            },
+            {
+                seccion: "Cómo Funciona n8n",
+                conceptos: [
+                    {
+                        titulo: "Flujo de Datos",
+                        contenido: "Los datos fluyen de un nodo al siguiente, siendo transformados en cada paso. Cada nodo recibe datos del nodo anterior, los procesa, y pasa los resultados al siguiente.",
+                        proceso: [
+                            "1. El trigger inicia el flujo y genera datos iniciales",
+                            "2. Cada nodo recibe los datos del nodo anterior",
+                            "3. El nodo procesa/transforma los datos según su configuración",
+                            "4. Los datos procesados se pasan al siguiente nodo",
+                            "5. El proceso continúa hasta el final del flujo"
+                        ]
+                    },
+                    {
+                        titulo: "Sintaxis de Expresiones",
+                        contenido: "n8n usa expresiones especiales para acceder a datos. La sintaxis más común es {{ $json.campo }} para acceder a campos de los datos.",
+                        ejemplos: [
+                            "{{ $json.nombre }} - Accede al campo 'nombre'",
+                            "{{ $json.costo_anual }} - Accede al campo 'costo_anual'",
+                            "{{ $now }} - Fecha y hora actual",
+                            "{{ $workflow.name }} - Nombre del flujo",
+                            "{{ $execution.id }} - ID de la ejecución"
+                        ]
+                    },
+                    {
+                        titulo: "Manejo de Errores",
+                        contenido: "n8n permite manejar errores de diferentes formas: reintentos automáticos, nodos de error, y notificaciones cuando algo falla.",
+                        estrategias: [
+                            "Continue on Fail: Continuar aunque un nodo falle",
+                            "Retry on Fail: Reintentar automáticamente",
+                            "Error Trigger: Nodo especial que se activa en errores",
+                            "Try-Catch: Capturar y manejar errores específicos"
+                        ]
+                    }
+                ]
+            },
+            {
+                seccion: "Casos de Uso Comunes",
+                conceptos: [
+                    {
+                        titulo: "Automatización de Procesos",
+                        contenido: "n8n es ideal para automatizar procesos repetitivos que normalmente requieren intervención manual.",
+                        ejemplos: [
+                            "Sincronización de datos entre sistemas",
+                            "Procesamiento de formularios y envío de respuestas",
+                            "Generación automática de reportes",
+                            "Notificaciones automáticas basadas en eventos",
+                            "Backup automático de datos"
+                        ]
+                    },
+                    {
+                        titulo: "Integración entre Sistemas",
+                        contenido: "n8n actúa como un puente entre diferentes sistemas que no se comunican nativamente.",
+                        ejemplo: "Conectar un formulario web con Google Sheets, enviar notificación por email, y actualizar una base de datos, todo automáticamente."
+                    },
+                    {
+                        titulo: "Gestión de Activos de Software",
+                        contenido: "Como en nuestra actividad práctica, n8n puede automatizar la recopilación, procesamiento y análisis de información de software.",
+                        beneficios: [
+                            "Inventario automático de software",
+                            "Análisis de riesgos automatizado",
+                            "Generación de reportes periódicos",
+                            "Alertas de software desactualizado",
+                            "Sincronización con bases de datos"
+                        ]
+                    }
+                ]
+            },
+            {
+                seccion: "Ventajas y Limitaciones",
+                conceptos: [
+                    {
+                        titulo: "Ventajas de n8n",
+                        contenido: "n8n ofrece múltiples ventajas sobre otras herramientas de automatización.",
+                        lista: [
+                            "Código abierto: Puedes auto-hospedarlo o usar la versión cloud",
+                            "Interfaz visual: No necesitas programar mucho código",
+                            "Gran cantidad de integraciones: Más de 400 servicios",
+                            "Flexible: Permite lógica compleja con nodos Function",
+                            "Gratis: La versión cloud tiene un plan gratuito generoso",
+                            "Comunidad activa: Muchos recursos y ejemplos disponibles"
+                        ]
+                    },
+                    {
+                        titulo: "Limitaciones",
+                        contenido: "Como cualquier herramienta, n8n tiene algunas limitaciones que debes conocer.",
+                        lista: [
+                            "Curva de aprendizaje: Requiere tiempo para dominarlo completamente",
+                            "Límites en plan gratuito: Número limitado de ejecuciones",
+                            "Dependencia de internet: Para integraciones cloud",
+                            "Complejidad: Flujos muy complejos pueden ser difíciles de mantener"
+                        ]
+                    }
+                ]
+            },
+            {
+                seccion: "Mejores Prácticas",
+                conceptos: [
+                    {
+                        titulo: "Diseño de Flujos",
+                        contenido: "Sigue estas prácticas para crear flujos eficientes y mantenibles.",
+                        practicas: [
+                            "Nombra los nodos de forma descriptiva",
+                            "Agrega descripciones a los nodos complejos",
+                            "Organiza los nodos de forma lógica (de izquierda a derecha)",
+                            "Usa colores para agrupar nodos relacionados",
+                            "Mantén los flujos simples cuando sea posible",
+                            "Documenta flujos complejos"
+                        ]
+                    },
+                    {
+                        titulo: "Manejo de Datos",
+                        contenido: "Sigue estas recomendaciones para trabajar eficientemente con datos.",
+                        recomendaciones: [
+                            "Valida datos de entrada antes de procesarlos",
+                            "Usa nodos Set para estructurar datos claramente",
+                            "Maneja casos donde los datos pueden estar vacíos",
+                            "Usa expresiones para transformar datos cuando sea posible",
+                            "Prueba cada nodo individualmente antes de continuar"
+                        ]
+                    },
+                    {
+                        titulo: "Debugging (Depuración)",
+                        contenido: "Aprende a identificar y solucionar problemas en tus flujos.",
+                        tips: [
+                            "Ejecuta nodos individualmente para probar",
+                            "Revisa los datos de salida de cada nodo",
+                            "Usa console.log() en nodos Function para depurar",
+                            "Revisa el historial de ejecuciones para ver qué falló",
+                            "Lee los mensajes de error cuidadosamente"
+                        ]
+                    }
+                ]
             }
         ]
     }
@@ -1004,6 +1425,8 @@ function generateSectionHTML(content) {
             return generateCasosHTML(content);
         case 'Autoevaluación':
             return generateAutoevaluacionHTML(content);
+        case 'n8n - Automatización de Flujos':
+            return generateN8nHTML(content);
         default:
             return '<p>Contenido no disponible</p>';
     }
@@ -1075,6 +1498,142 @@ function generateAutoevaluacionHTML(content) {
             </div>
         </div>
     `;
+}
+
+function generateN8nHTML(content) {
+    return content.items.map(item => `
+        <div class="n8n-seccion">
+            <h3 class="n8n-seccion-titulo">
+                <i class="fas fa-book-open"></i> ${item.seccion}
+            </h3>
+            ${item.conceptos.map(concepto => `
+                <div class="n8n-concepto-card">
+                    <h4 class="n8n-concepto-titulo">
+                        <i class="fas fa-info-circle"></i> ${concepto.titulo}
+                    </h4>
+                    <p class="n8n-concepto-contenido">${concepto.contenido}</p>
+                    ${concepto.analogia ? `
+                        <div class="n8n-analogia">
+                            <strong><i class="fas fa-lightbulb"></i> Analogía:</strong> ${concepto.analogia}
+                        </div>
+                    ` : ''}
+                    ${concepto.caracteristicas ? `
+                        <div class="n8n-lista">
+                            <strong>Características:</strong>
+                            <ul>
+                                ${concepto.caracteristicas.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.beneficios ? `
+                        <div class="n8n-lista">
+                            <strong>Beneficios:</strong>
+                            <ul>
+                                ${concepto.beneficios.map(b => `<li>${b}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.tipos ? `
+                        <div class="n8n-lista">
+                            <strong>Tipos:</strong>
+                            <ul>
+                                ${concepto.tipos.map(t => `<li>${t}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.componentes ? `
+                        <div class="n8n-lista">
+                            <strong>Componentes:</strong>
+                            <ul>
+                                ${concepto.componentes.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.ejemplo ? `
+                        <div class="n8n-ejemplo">
+                            <strong><i class="fas fa-code"></i> Ejemplo:</strong>
+                            <p>${concepto.ejemplo}</p>
+                        </div>
+                    ` : ''}
+                    ${concepto.proceso ? `
+                        <div class="n8n-proceso">
+                            <strong>Proceso:</strong>
+                            <ol>
+                                ${concepto.proceso.map(p => `<li>${p}</li>`).join('')}
+                            </ol>
+                        </div>
+                    ` : ''}
+                    ${concepto.ejemplos ? `
+                        <div class="n8n-lista">
+                            <strong>Ejemplos:</strong>
+                            <ul>
+                                ${concepto.ejemplos.map(e => `<li>${e}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.estructura ? `
+                        <div class="n8n-ejemplo">
+                            <strong>Estructura:</strong>
+                            <p>${concepto.estructura}</p>
+                        </div>
+                    ` : ''}
+                    ${concepto.acceso ? `
+                        <div class="n8n-ejemplo">
+                            <strong>Acceso:</strong>
+                            <p>${concepto.acceso}</p>
+                        </div>
+                    ` : ''}
+                    ${concepto.informacion ? `
+                        <div class="n8n-lista">
+                            <strong>Información disponible:</strong>
+                            <ul>
+                                ${concepto.informacion.map(i => `<li>${i}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.estrategias ? `
+                        <div class="n8n-lista">
+                            <strong>Estrategias:</strong>
+                            <ul>
+                                ${concepto.estrategias.map(e => `<li>${e}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.lista ? `
+                        <div class="n8n-lista">
+                            <ul>
+                                ${concepto.lista.map(l => `<li>${l}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.recomendaciones ? `
+                        <div class="n8n-lista">
+                            <strong>Recomendaciones:</strong>
+                            <ul>
+                                ${concepto.recomendaciones.map(r => `<li>${r}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.practicas ? `
+                        <div class="n8n-lista">
+                            <strong>Mejores prácticas:</strong>
+                            <ul>
+                                ${concepto.practicas.map(p => `<li>${p}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${concepto.tips ? `
+                        <div class="n8n-lista">
+                            <strong>Tips:</strong>
+                            <ul>
+                                ${concepto.tips.map(t => `<li>${t}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('')}
+        </div>
+    `).join('');
 }
 
 function startTest(temaIndex) {
